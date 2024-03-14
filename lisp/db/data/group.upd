@@ -1,0 +1,4 @@
+;; update file for GROUP
+
+
+(SETF (DB-COMPILE-DATE GROUP) (list->date '(2 18 1997)))

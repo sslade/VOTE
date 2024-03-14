@@ -1,0 +1,1 @@
+;; Macintosh HD:lisp:db:data:member.load (load (merge-pathnames data "member0.pfsl"))(load (merge-pathnames data "member1.pfsl"))(load (merge-pathnames data "member2.pfsl"))

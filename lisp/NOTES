@@ -1,0 +1,38 @@
+
+11/24/2015
+**********************************
+updated sbcl.lisp
+=================
+(defun hpos (stream)
+  (sb-kernel:charpos stream))
+
+(defun line-length (stream)
+  (sb-impl::line-length stream))
+
+
+converted data files to unix format
+===================================
+dos2unix -c mac *
+
+updated *.load to get all data files
+
+bug in out-switch
+=================
+in utils/output.lisp
+redefined out-switch as function with one argument - macro was broken
+updated source code so that out-switch takes only one argument
+if multiple arguments, then wrapped a progn around them.
+
+unlock package common-lisp
+==========================
+in .sbclrc
+
+(sb-ext:unlock-package (find-package 'common-lisp-user))
+(sb-ext:unlock-package (find-package 'common-lisp))
+
+
+10/25/2015
+**********************************
+(declaim (sb-ext:muffle-conditions style-warning))
+
+

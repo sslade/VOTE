@@ -1,0 +1,1 @@
+;; Macintosh HD:lisp:qbc:data:quantity.load (load (merge-pathnames data "quantity0.pfsl"))(load (merge-pathnames data "quantity1.pfsl"))

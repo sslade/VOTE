@@ -1,0 +1,9 @@
+;; Macintosh HD:lisp:db:data:bill.load 
+
+; (load (merge-pathnames data "bill0.pfsl"))
+; (load (merge-pathnames data "bill1.pfsl"))
+;; 11/24/15
+
+(load (merge-pathnames data "bill0"))
+(load (merge-pathnames data "bill1"))
+(load (merge-pathnames data "bill2"))

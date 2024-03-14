@@ -1,0 +1,6 @@
+;; Macintosh HD:lisp:db:data:strategy.load 
+
+(load (merge-pathnames data "strategy"))
+(load (merge-pathnames data "strategy1"))
+
+;; 11/24/15

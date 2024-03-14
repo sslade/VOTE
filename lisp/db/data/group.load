@@ -1,0 +1,15 @@
+;; Macintosh HD:lisp:db:data:group.load 
+
+;(load (merge-pathnames data "group0.pfsl"))
+;(load (merge-pathnames data "group1.pfsl"))
+;(load (merge-pathnames data "group2.pfsl"))
+;n(load (merge-pathnames data "group3.pfsl"))
+;(load (merge-pathnames data "group4.pfsl"))
+
+;; 11/24/15
+
+(load (merge-pathnames data "group0"))
+(load (merge-pathnames data "group1"))
+(load (merge-pathnames data "group2"))
+(load (merge-pathnames data "group3"))
+(load (merge-pathnames data "group4"))

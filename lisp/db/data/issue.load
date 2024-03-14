@@ -1,0 +1,22 @@
+;; Macintosh HD:lisp:db:data:issue.load 
+
+; (load (merge-pathnames data "issue0.pfsl"))
+; (load (merge-pathnames data "issue1.pfsl"))
+; (load (merge-pathnames data "issue2.pfsl"))
+; (load (merge-pathnames data "issue3.pfsl"))
+; (load (merge-pathnames data "issue4.pfsl"))
+; (load (merge-pathnames data "issue5.pfsl"))
+; (load (merge-pathnames data "issue6.pfsl"))
+
+;; 11/24/15
+
+(load (merge-pathnames data "issue0"))
+(load (merge-pathnames data "issue1"))
+(load (merge-pathnames data "issue2"))
+(load (merge-pathnames data "issue3"))
+(load (merge-pathnames data "issue4"))
+(load (merge-pathnames data "issue5"))
+(load (merge-pathnames data "issue6"))
+;(load (merge-pathnames data "issue7"))
+;(load (merge-pathnames data "issue8"))
+;(load (merge-pathnames data "issue9"))

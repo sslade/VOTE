@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>
+Cognitive Models of Decision Making: Running VOTE
+</title>
+</head>
+
+<body lang="en-US" bgcolor="#ffffff" dir="ltr" style="background: #ffffff">
+<h1 class="western" style="line-height: 100%"><a name="h.834qjfv4co37"></a>
+Cognitive Models of Decision Making: Running VOTE</h1>
+<p style="margin-bottom: 0in; line-height: 115%"><br>
+</p>
+
+The Common LISP version of the VOTE program is alive and well and available on the zoo.  (<a href="http://zoo.cs.yale.edu/classes/cs458/lisp/">
+http://zoo.cs.yale.edu/classes/cs458/lisp/</a>)
+
+<a href="runvote.script">Here is a transcript</a> of a sample session.
+<p>
+This is a summary of the commands displayed.
+<ul>
+
+<li> # connect to the VOTE lisp directory<br>
+cd /c/cs458/lisp          
+<p><li> # start up lisp, aka, Steel Bank Common Lisp, aka, sbcl<br>
+/c/cs458/bin/sbcl
+<p><li> ;; load the sbcl initialization file, or copy it to ~/.sbclrc <br>
+(load "sbclrc.lisp")  
+<p><li> ;; load the vote program<br>
+(load "load_vote.lisp")
+<p><li> ;; initialize the vote databases<br>
+(init-pol)
+<p><li> ;; Run the VOTE object-oriented database for members of congress<br>
+(dbase member)
+<p><li> ;; Sample dbase commands:<br>
+help / header / hc / display
+	<p><li> ;; connect to issue database and run sample commands<br>
+cd issue
+<p><li> ;; connect to group database and run sample commands<br>
+cd group
+<p><li> ;; connect to bill database and run sample commands<br>
+cd bill
+<p><li> ;; connect to strategy database and run sample commands<br>
+cd strategy
+<p><li> ;; run the vote program on a decision<br>
+(vote 'udall 'hr-2978)
+
+<p><li> ;; view the decision database<br>
+(dbase decision)
+
+<p><li> ;; turn on sarcasm<br>
+(sarcastic-explanation (car (db-all decision)))
+
+
+
+
+</ul>
+
+
+
+
+
+</body>
+</html>

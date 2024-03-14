@@ -1,0 +1,4 @@
+;; update file for BILL
+
+
+(SETF (DB-COMPILE-DATE BILL) (list->date '(2 18 1997)))

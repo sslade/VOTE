@@ -1,0 +1,1 @@
+;; definitions of T functions that are replaced by CL functions(defun read-string->list (input)  read-from-string  

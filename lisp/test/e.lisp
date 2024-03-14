@@ -1,0 +1,1 @@
+(defun e (n)  (cond ((zerop n) 1)        (t (+ (/ 1.0 (fact n)) (e (- n 1))))))(defun fact (n)  (cond ((zerop n) 1)        (t (* n (fact (- n 1))))))

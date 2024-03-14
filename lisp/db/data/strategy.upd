@@ -1,0 +1,4 @@
+;; update file for STRATEGY
+
+
+(SETF (DB-COMPILE-DATE STRATEGY) (list->date '(8 3 1996)))

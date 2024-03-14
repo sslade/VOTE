@@ -1,0 +1,1 @@
+(defun take-a-break ()  (if (eq *backtrace-on-break* t)    (break)    (format t "The Stack Backtrace window does not open automatically.")))(setf *backtrace-on-break* t)

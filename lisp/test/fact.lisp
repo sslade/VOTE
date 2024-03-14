@@ -1,0 +1,1 @@
+(defun fact (n)  (declare (notinline fact))  (if (zerop n)    1    (* n (fact (- n 1)))))

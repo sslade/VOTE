@@ -1,0 +1,35 @@
+;;; load the vote data
+
+(load "db/data/bill")
+(load "db/data/bill0")
+(load "db/data/bill1")
+(load "db/data/bill2")
+
+(load "db/data/group")
+(load "db/data/group0")
+(load "db/data/group1")
+(load "db/data/group2")
+(load "db/data/group3")
+(load "db/data/group4")
+
+(load "db/data/issue")
+(load "db/data/issue0")
+(load "db/data/issue1")
+(load "db/data/issue2")
+(load "db/data/issue3")
+(load "db/data/issue4")
+(load "db/data/issue5")
+(load "db/data/issue6")
+(load "db/data/issue7")
+(load "db/data/issue8")
+(load "db/data/issue9")
+
+(load "db/data/member")
+(load "db/data/member0")
+(load "db/data/member1")
+(load "db/data/member2")
+(load "db/data/member3")
+
+(load "db/data/strategy")
+(load "db/data/strategy0")
+(load "db/data/strategy1")

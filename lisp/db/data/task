@@ -1,0 +1,28 @@
+;; MicroNet 203:lisp:db:data:task
+
+
+;; Items for Database: TASK
+(defvar TASK138)
+(prog1 (setf TASK138 (make-instance 'TASK))
+(setf (slot-value TASK138 'DATE-DUE) (list->date '(5 5 1955))) 
+(setf (slot-value TASK138 'STATUS)  "Active") 
+(setf (slot-value TASK138 'DATE-OPEN) (list->date '(10 20 1993))) 
+(setf (slot-value TASK138 'SYMBOL)  'TASK138) 
+(setf (slot-value TASK138 'SUBJECT)  "test 5") )
+(insert-item TASK TASK138)
+(defvar TASK238)
+(prog1 (setf TASK238 (make-instance 'TASK))
+(setf (slot-value TASK238 'DATE-DUE) (list->date '(5 5 1955))) 
+(setf (slot-value TASK238 'STATUS)  "Active") 
+(setf (slot-value TASK238 'DATE-OPEN) (list->date '(10 13 1993))) 
+(setf (slot-value TASK238 'SYMBOL)  'TASK238) 
+(setf (slot-value TASK238 'SUBJECT)  "test 1") )
+(insert-item TASK TASK238)
+(defvar TASK239)
+(prog1 (setf TASK239 (make-instance 'TASK))
+(setf (slot-value TASK239 'DATE-DUE) (list->date '(6 6 1966))) 
+(setf (slot-value TASK239 'STATUS)  "Active") 
+(setf (slot-value TASK239 'DATE-OPEN) (list->date '(10 13 1993))) 
+(setf (slot-value TASK239 'SYMBOL)  'TASK239) 
+(setf (slot-value TASK239 'SUBJECT)  "test 2") )
+(insert-item TASK TASK239)

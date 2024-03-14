@@ -1,0 +1,1 @@
+(defun foo (k)  (cond ((zerop k) 1)        (t (* k (foo (- k 1))))))
