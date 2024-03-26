@@ -11,6 +11,27 @@ listed above.
 
 # Trying out the program
 
+For the moment this has only been tested using sblc (brew instal sbcl)
+on a late model (Apple Silicon) Macintosh.
+
+To load libraries correctly make a change that's similar to this one,
+to update your search path for sbcl:
+
+```
+diff --git a/lisp/load_vote.lisp b/lisp/load_vote.lisp
+index 7a0c546..7edbf50 100644
+--- a/lisp/load_vote.lisp
++++ b/lisp/load_vote.lisp
+@@ -44,7 +44,7 @@
+    (case *implementation-type*
+      (MCL "Macintosh HD:lisp:")
+      (Allegro "/class/sslade/vote/")
+-     (SBCL "/c/cs458/lisp/")
++     (SBCL "/Users/gnn/Repos/Yale/VOTE/lisp/")
+      (otherwise nil)))
+   "Root directory in which VOTE code is installed")
+```
+
 In the root of the project you can start a Lisp interpreter, load the
 code, and try it out interactively given the commands below.
 
