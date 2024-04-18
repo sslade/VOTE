@@ -44,7 +44,7 @@
    (case *implementation-type*
      (MCL "Macintosh HD:lisp:")
      (Allegro "/class/sslade/vote/")
-     (SBCL "/c/cs458/lisp/")
+     (SBCL "/Users/gnn/Repos/Yale/VOTE/lisp/")
      (otherwise nil)))
   "Root directory in which VOTE code is installed")
 
