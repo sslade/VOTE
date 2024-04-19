@@ -62,6 +62,12 @@
 (defmethod english ((self relation))
   (eng-relation (get-subject self) self))
 
+(defmethod french ((self relation))
+  (eng-relation (get-subject self) self))
+
+(defmethod japanese ((self relation))
+  (eng-relation (get-subject self) self))
+
 (defmethod reveal-group ((self relation))
   (or (relation-group-structure self)
       (let ((i (check-arg #'group-p (get-node (relation-group self) group)

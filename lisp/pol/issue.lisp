@@ -23,6 +23,11 @@
                   :accessor issue-french-short)
    (pro-french  :initform nil :documentation "French phrase biased favorably" :accessor issue-pro-french)
    (con-french  :initform nil :documentation "pejorative French phrase" :accessor issue-con-french)
+   (japanese   :initform nil :documentation "Japanese version of issue name" :accessor issue-japanese)
+   (japanese-short :initform nil :documentation "short Japanese phrase for issue" 
+                  :accessor issue-japanese-short)
+   (pro-japanese  :initform nil :documentation "Japanese phrase biased favorably" :accessor issue-pro-japanese)
+   (con-japanese  :initform nil :documentation "pejorative Japanese phrase" :accessor issue-con-japanese)
    (number  :initform nil :documentation "sing or plur for generation" :accessor issue-number)
    (groups    :initform nil :documentation "List of symbols" :accessor issue-groups)
    (pro-stances :initform nil :documentation "List of stances supporting this issue" 
@@ -40,7 +45,9 @@
 (defmethod all-the-slots ((obj issue))
   (append '(name type sort-key synonyms isa isa-depth
             instances polarity english english-short pro-english con-english
-            french french-short pro-french con-french number groups pro-stances con-stances 
+            french french-short pro-french con-french japanese
+	    japanese-short pro-japanese con-japanese number groups pro-stances
+	    con-stances 
             norm opposite notes)
           (call-next-method)))
 
@@ -54,16 +61,23 @@
   (cond (*english*
          (if (issue-english self)
            (issue-english self)
-           (concatenate 'string (issue-name self) " (*)")))
-        (else
+           (concatenate 'string (issue-name self) " (*)"))
+        (*french*
          (if (issue-french self)
            (issue-french self)
-           (concatenate 'string "**" (issue-name self) "**")))))
+           (concatenate 'string "*F" (issue-name self) "F*")))
+        (*japanese*
+         (if (issue-japanese self)
+           (issue-japanese self)
+           (concatenate 'string "*J" (issue-name self) "J*"))))))
 
 (defmethod english-short ((self issue))
-  (if *english*
+  (cond *english*
     (issue-english-short self)
-    (issue-french-short self)))
+    (*french*
+     (issue-french-short self)
+    (*japanese*
+     (issue-japanese-short self)))))
 
 (defmethod inorder? ((self issue) (other issue))
   (if (issue? other)
@@ -215,6 +229,10 @@
     ((french-short)  #'(LAMBDA () (prompted-string-input "Short French phrase: ")))
     ((pro-french)    #'(LAMBDA () (prompted-string-input "Pro French phrase: ")))
     ((con-french)    #'(LAMBDA () (prompted-string-input "Con French phrase: ")))
+    ((japanese)        #'(LAMBDA () (prompted-string-input "Japanese phrase: ")))
+    ((japanese-short)  #'(LAMBDA () (prompted-string-input "Short Japanese phrase: ")))
+    ((pro-japanese)    #'(LAMBDA () (prompted-string-input "Pro Japanese phrase: ")))
+    ((con-japanese)    #'(LAMBDA () (prompted-string-input "Con Japanese phrase: ")))
     ((number)        #'(LAMBDA () (prompted-symbol-input "Number (sing or plur): ")))
     ((opposite)      #'(LAMBDA () (prompted-issue-input "Opposite issue: " self)))
     ((polarity)      #'(LAMBDA () (prompted-string-input "Polarity: ")))
@@ -272,6 +290,10 @@
           (french-short (french-short))
           (pro-french (pro-french pro-f))
           (con-french (con-french con-f))
+          (japanese (japanese))
+          (japanese-short (japanese-short))
+          (pro-japanese (pro-japanese pro-f))
+          (con-japanese (con-japanese con-f))
           (number (number))
           (polarity (polarity polar))
           ))
