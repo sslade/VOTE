@@ -91,6 +91,8 @@
 
 ;; (my-load vote-root "load_utils")
 (defvar *english* T)
+(defvar *french* T)
+(defvar *japanese* T)
 
 (my-load utils   "generics" )
 (my-load utils   "copy" )
