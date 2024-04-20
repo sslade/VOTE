@@ -35,11 +35,25 @@ index 7a0c546..7edbf50 100644
 In the root of the project you can start a Lisp interpreter, load the
 code, and try it out interactively given the commands below.
 
+Note that Lisp functions are enclosed in parentheses () and that bare
+commands against the program are not.
+
+When moving through the database it acts like a filesystem heirarchy
+in UNIX where one uses the cd (change directory) command to access a
+particular set of tables.  The current location in the heirarchy is
+shown in the prompt for that level:
+
+```
+* cd issues
+
+ISSUES> 
+```
+
 ```
 > lisp
 
 ;; load the sbcl initialization file, or copy it to ~/.sbclrc
-(load "sbclrc.lisp")
+(load "sbclrc.lisp")  <- Lisp Function
 ;; load the vote program
 (load "load_vote.lisp")
 ;; initialize the vote databases
@@ -48,8 +62,16 @@ code, and try it out interactively given the commands below.
 (dbase member)
 ;; Sample dbase commands:
 help / header / hc / display
+;; Show headers
+MEMBER> headers <- Bare command
+;; Select a member
+MEMBER> hc
+;; Display a Member from the Database
+* display
 ;; connect to issue database and run sample commands
 cd issue
+;; Show the headers
+ISSUE> headers
 ;; connect to group database and run sample commands
 cd group
 ;; connect to bill database and run sample commands
