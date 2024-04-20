@@ -65,11 +65,11 @@
         (*french*
          (if (issue-french self)
            (issue-french self)
-           (concatenate 'string "*F" (issue-name self) "F*")))
+           (concatenate 'string "*F " (issue-name self) " F*")))
         (*japanese*
          (if (issue-japanese self)
            (issue-japanese self)
-           (concatenate 'string "*J" (issue-name self) "J*")))))
+           (concatenate 'string "*J " (issue-name self) " J*")))))
 
 (defmethod english-short ((self issue))
   (cond (*english*
