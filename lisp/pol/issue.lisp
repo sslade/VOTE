@@ -61,7 +61,7 @@
   (cond (*english*
          (if (issue-english self)
            (issue-english self)
-           (concatenate 'string (issue-name self) " (*)"))
+           (concatenate 'string (issue-name self) " (*)")))
         (*french*
          (if (issue-french self)
            (issue-french self)
@@ -69,15 +69,15 @@
         (*japanese*
          (if (issue-japanese self)
            (issue-japanese self)
-           (concatenate 'string "*J" (issue-name self) "J*"))))))
+           (concatenate 'string "*J" (issue-name self) "J*")))))
 
 (defmethod english-short ((self issue))
-  (cond *english*
-    (issue-english-short self)
+  (cond (*english*
+    (issue-english-short self))
     (*french*
-     (issue-french-short self)
+     (issue-french-short self))
     (*japanese*
-     (issue-japanese-short self)))))
+     (issue-japanese-short self))))
 
 (defmethod inorder? ((self issue) (other issue))
   (if (issue? other)
