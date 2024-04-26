@@ -130,14 +130,14 @@
       number sing
       gender unspec
       human  nil
-      lex    "this bill")
+      lex    "この法案")
       
 (dnpq bill-agn-np
       person third
       number plur
       gender unspec
       human  t
-      lex    "opponents of this bill")
+      lex    "この法案の反対者")
       
 
 (dnpq *record*
@@ -146,8 +146,8 @@
       gender unspec
       record t
       human t
-      lex-list  ("the record"
-                 "the voting record")
+      lex-list  ("記録"
+                 "投票記録")
       )
 
 (dnpq district-np
@@ -155,14 +155,14 @@
       number sing
       gender unspec
       human t
-      lex    "my district")
+      lex    "私の地区")
 
 (dnpq *self*
       human t
       person first
       number sing
       gender male
-      lex    "present company"
+      lex    "現在の会社"
       use-pronoun always)
 
 (dnpq *norm*
@@ -172,13 +172,13 @@
       human t
       use-noun always
       lex-list  (
-                 "popular opinion"
-                 "the public in general"
-                 "the citizenry"
-                 "the populace"
-                 "the general population"
-                 "the American public"
-                 "the general public"
+                 "般的な意見"
+                 "般大衆"
+                 "国民"
+                 "大衆"
+                 "般の人々"
+                 "アメリカ国民"
+                 "般市民"
                  )
       )
 
@@ -186,34 +186,30 @@
 (defvar *norm-plur*   (proto-dnp *norm*
              'number 'plur
              'lex-list '(
-                         "the majority of people"
-                         "most Americans"
-                         "most voters"
-                         "most citizens"
-                         "most taxpayers"
-                         "people in general"
-                         "average people"
-                         "normal people"
-                         "most people"
+                         "大多数の人が"
+                         "ほとんどのアメリカ人"
+                         "ほとんどの有権者"
+                         "ほとんどの国民"
+                         "ほとんどの納税者"
+                         "般の人"
+                         "平均的な人々"
+                         "ふつうの人"
+                         "ほとんどの人"
                          )))
 
 (defvar *norm-male*   (proto-dnp *norm*
              'gender 'male
              'lex-list '(
-                         "the man on the street"
-                         "any right-thinking person"
-                         "the common working person"
-                         "the average citizen"
-                         "the normal citizen"
-                         "the typical citizen"
-                         "your average taxpayer"
-                         "the average person"
-                         "the average voter"
-                         "the average American"
-                         "the typical voter"
-                         "the typical American"
-                         "a normal person"
-                         "a normal American"
+                         "路上の男"
+                         "正しい考えの人なら誰でも"
+                         "平均的な国民"
+                         "典型的な国民"
+                         "平均的な人"
+                         "平均的な有権者"
+                         "典型的な有権者"
+                         "典型的なアメリカ人"
+                         "普通の人"
+                         "普通のアメリカ人"
                          )))
 
                          ;; "your average Joe"
