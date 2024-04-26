@@ -1,6 +1,8 @@
-
+;;
 ;; (english self)
 ;; operation for producing english phrase for a structure
+;;
+;; Note that the entire system uses "english" when it might well have used something generic, such as "say" or "phrase".  For the moment we bury our language extensions inside of english rather than refactoring this entire file but in futuee it would make the system more I18N clean to do so.
 ;;-------------------------------------------------------
 (defmethod english (self)
   (cond ((and (record-p self)
