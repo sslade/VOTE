@@ -57,27 +57,27 @@
           (object-hash self) 
           (issue-name self)))
    
+;; See notes in english.lisp on how the phrases are actually handled.
+;; The english method really turns an issue into a human phrase, now
+;; in any language encoded below.  The variables in asterisks control
+;; which language is in use at any one point.
 (defmethod english ((self issue))
   (cond (*english*
          (if (issue-english self)
-           (issue-english self)
-           (concatenate 'string (issue-name self) " (*)")))
+           (issue-english self)))
         (*french*
          (if (issue-french self)
-           (issue-french self)
-           (concatenate 'string "*F " (issue-name self) " F*")))
+           (issue-french self)))
         (*japanese*
          (if (issue-japanese self)
-           (issue-japanese self)
-           (concatenate 'string "*J " (issue-name self) " J*")))))
+           (issue-japanese self)))
+        (concatenate 'string (issue-name self) " (*)")))
 
 (defmethod english-short ((self issue))
-  (cond (*english*
-    (issue-english-short self))
-    (*french*
-     (issue-french-short self))
-    (*japanese*
-     (issue-japanese-short self))))
+  (issue-english-short self))
+
+(defmethod japanese-short ((self issue))
+  (issue-japanese-short self))
 
 (defmethod inorder? ((self issue) (other issue))
   (if (issue? other)
