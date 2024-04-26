@@ -212,9 +212,6 @@
                          "普通のアメリカ人"
                          )))
 
-                         ;; "your average Joe"
-                         ;; "John Q. Public"
-           
 ;; Twice as likely to pick male as other norms
 
 (defun gen-norm-np ()
