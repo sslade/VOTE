@@ -74,6 +74,9 @@ cd issue
 ISSUE> headers
 ;; connect to group database and run sample commands
 cd group
+;;
+GROUP> headers
+GROUP> display
 ;; connect to bill database and run sample commands
 cd bill
 ;; connect to strategy database and run sample commands
