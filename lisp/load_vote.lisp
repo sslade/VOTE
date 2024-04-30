@@ -44,7 +44,7 @@
    (case *implementation-type*
      (MCL "Macintosh HD:lisp:")
      (Allegro "/class/sslade/vote/")
-     (SBCL "/c/cs458/lisp/")
+     (SBCL "/Users/gnn/Repos/Yale/VOTE/lisp/")
      (otherwise nil)))
   "Root directory in which VOTE code is installed")
 
@@ -91,6 +91,8 @@
 
 ;; (my-load vote-root "load_utils")
 (defvar *english* T)
+(defvar *french* T)
+(defvar *japanese* T)
 
 (my-load utils   "generics" )
 (my-load utils   "copy" )

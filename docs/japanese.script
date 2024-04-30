@@ -1,0 +1,5995 @@
+; SLIME 2.29.1
+CL-USER> (load "sbclrc.lisp")
+
+
+Welcome to Slade's LISP!
+T
+CL-USER> (load "/Users/gnn/Repos/Yale/VOTE/lisp/load_vote.lisp")
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/myload.fasl"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/sbcl.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/sbcl.lisp
+; in: DEFUN COPY-INSTANCE
+;     (ALL-THE-SLOTS OBJECT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ALL-THE-SLOTS
+; 
+; compilation unit finished
+;   Undefined function:
+;     ALL-THE-SLOTS
+;   caught 1 STYLE-WARNING condition
+WARNING:
+   Specializing on the second argument to PRINT-OBJECT has unportable effects,
+   and also interferes with precomputation of print functions for exceptional
+   situations.
+See also:
+  The ANSI Standard, Function PRINT-OBJECT
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/generics.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/copy.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/copy.lisp
+; in: DEFUN CLASS-SLOT-NAMES
+;     (CLASS-CLASS-SLOTS (FIND-CLASS CLASS-NAME))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLASS-CLASS-SLOTS
+
+;     (MAPCAR #'SLOT-DEFINITION-NAME (CLASS-CLASS-SLOTS (FIND-CLASS CLASS-NAME)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SLOT-DEFINITION-NAME
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CLASS-CLASS-SLOTS SLOT-DEFINITION-NAME
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN PROMPTED-STRING-INPUT
+;     (LREAD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LREAD
+; 
+; compilation unit finished
+;   Undefined function:
+;     LREAD
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN PROMPTED-SYMBOL-INPUT
+;     (->SYMBOL INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::->SYMBOL
+; 
+; compilation unit finished
+;   Undefined function:
+;     ->SYMBOL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN PROMPTED-DATE-INPUT
+;     (LIST->DATE INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LIST->DATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     LIST->DATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN PROMPTED-TIME-INPUT
+;     (LIST->TIME INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LIST->TIME
+; 
+; compilation unit finished
+;   Undefined function:
+;     LIST->TIME
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN PP-TAB-LIST
+;     (TAB-PP STREAM LST (+ WIDEST 2))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TAB-PP
+; 
+; compilation unit finished
+;   Undefined function:
+;     TAB-PP
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN TAB-PP
+;     (TAB-PRINT STREAM (CDR LST) TAB-STOP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TAB-PRINT
+; 
+; compilation unit finished
+;   Undefined function:
+;     TAB-PRINT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN TAB-PRINT
+;     (TAB STREAM TAB-STOP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TAB
+; 
+; compilation unit finished
+;   Undefined function:
+;     TAB
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/io.lisp
+; in: DEFUN TABULAR-PRINT
+;     (TAB STREAM TAB-STOP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TAB
+; 
+; compilation unit finished
+;   Undefined function:
+;     TAB
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN FILTER-FILE
+;     (FILTER-STREAM FILTER IN-STREAM OUT-STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILTER-STREAM
+; 
+; compilation unit finished
+;   Undefined function:
+;     FILTER-STREAM
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN TAB-TO-COLUMN
+;     (REPEAT-CHAR STREAM #\  (- COLUMN (HPOS STREAM)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REPEAT-CHAR
+; 
+; compilation unit finished
+;   Undefined function:
+;     REPEAT-CHAR
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN SPLIT-FILL
+;     (REPEAT-CHAR STREAM CHAR
+;      (- (LINE-LENGTH STREAM) (+ (HPOS STREAM) (LENGTH RIGHT-TEXT))))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REPEAT-CHAR
+; 
+; compilation unit finished
+;   Undefined function:
+;     REPEAT-CHAR
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN REVISE-FILE
+;     (REVISE-STREAM IN-STREAM OUT-STREAM OLD NEW)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVISE-STREAM
+; 
+; compilation unit finished
+;   Undefined function:
+;     REVISE-STREAM
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN REVISE-STREAM
+;     (STRING-SUBST (READ-LINE IN) OLD NEW T)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-SUBST
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-SUBST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN STRING-SUBST
+;     (STRING-MATCH LINE OLD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-MATCH
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-MATCH
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN STRING-MATCH
+;     (STRING-MATCH2 STRING PAT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-MATCH2
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-MATCH2
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN COMPARE-FILE
+;     (STREAM-COMPARE STREAM-1 STREAM-2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STREAM-COMPARE
+; 
+; compilation unit finished
+;   Undefined function:
+;     STREAM-COMPARE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN PARAGRAPH
+;     (CAPITALIZE-ONE (CAR STRING-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CAPITALIZE-ONE
+
+;     (SUB-PARAGRAPH (CAPITALIZE-ONE (CAR STRING-LIST)) STREAM LEFT RIGHT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SUB-PARAGRAPH
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CAPITALIZE-ONE SUB-PARAGRAPH
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/ionew.lisp
+; in: DEFUN SUB-PARAGRAPH
+;     (WHITESPACE? (CHAR STR 0))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::WHITESPACE?
+; 
+; compilation unit finished
+;   Undefined function:
+;     WHITESPACE?
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/macros.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/object_hash.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/object_hash.lisp
+; in: DEFUN OBJECT-HASH
+;     (CONVERT-TO-SYMBOL OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CONVERT-TO-SYMBOL
+; 
+; compilation unit finished
+;   Undefined function:
+;     CONVERT-TO-SYMBOL
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp
+; in: DEFUN DPS
+;     (DDPUT NODE (CAR L) (CADR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DDPUT
+; 
+; compilation unit finished
+;   Undefined function:
+;     DDPUT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp
+; in: DEFUN DDPUT
+;     (GENSYM 'SAVE)
+; 
+; caught WARNING:
+;   Constant SAVE conflicts with its asserted type (OR STRING UNSIGNED-BYTE).
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp
+; in: DEFUN DDPUT
+;     (*PUT VAL PROP NODE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::*PUT
+
+;     (ADD-PROPERTY NODE PROP VAL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ADD-PROPERTY
+
+;     #'FN
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FN
+; 
+; compilation unit finished
+;   Undefined functions:
+;     *PUT ADD-PROPERTY FN
+;   caught 1 WARNING condition
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp
+; in: DEFUN *PUT
+;     (ENTER (GET NODE '!DDPROPS) PROP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENTER
+; 
+; compilation unit finished
+;   Undefined function:
+;     ENTER
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/props.lisp
+; in: DEFUN ADD-PROPERTY
+;     (ENTER (GET NODE PROP) VAL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENTER
+; 
+; compilation unit finished
+;   Undefined function:
+;     ENTER
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/new_utils.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/new_utils.lisp
+; in: DEFUN MSORT
+;     (SMERGE (CAR L) TMPLIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SMERGE
+; 
+; compilation unit finished
+;   Undefined function:
+;     SMERGE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/new_utils.lisp
+; in: DEFUN SMERGE
+;     (INORDER? A B)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INORDER?
+; 
+; compilation unit finished
+;   Undefined function:
+;     INORDER?
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp
+; in: DEFUN SPELL-MATCH
+;     (SM-CHECK TABLE WORD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-CHECK
+
+;     (SM-DELETION TABLE WORD WORD-LENGTH)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-DELETION
+
+;     (SM-DOUBLE TABLE WORD (- WORD-LENGTH 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-DOUBLE
+
+;     (SM-INSERTION TABLE WORD WORD-LENGTH)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-INSERTION
+
+;     (SM-TRANSPOSITION TABLE WORD (- WORD-LENGTH 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-TRANSPOSITION
+; 
+; compilation unit finished
+;   Undefined functions:
+;     SM-CHECK SM-DELETION SM-DOUBLE SM-INSERTION SM-TRANSPOSITION
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp
+; in: DEFUN SM-TRANSPOSITION
+;     (STRING-SWAP WORD-STRING INDEX (- INDEX 1))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-SWAP
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-SWAP
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp
+; in: DEFUN SM-DOUBLE
+;     (STRING-INSERT WORD-STRING (ELT WORD-STRING INDEX) INDEX)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-INSERT
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-INSERT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp
+; in: DEFUN SM-INSERTION
+;     (SM-INSERTION-CHECK TABLE WORD-STRING INDEX #\A)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SM-INSERTION-CHECK
+; 
+; compilation unit finished
+;   Undefined function:
+;     SM-INSERTION-CHECK
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/spell.lisp
+; in: DEFUN SM-INSERTION-CHECK
+;     (INCR-CHAR NEW-CHAR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INCR-CHAR
+
+;     (STRING-INSERT WORD-STRING NEW-CHAR INDEX)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-INSERT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INCR-CHAR STRING-INSERT
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/output.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/output.lisp
+; in: DEFUN OUT-SWITCH
+;     (DEFUN OUT-SWITCH (N) (EVAL N))
+; 
+; caught STYLE-WARNING:
+;   OUT-SWITCH was previously defined as a macro.
+; 
+; compilation unit finished
+;   caught 1 STYLE-WARNING condition
+WARNING: redefining COMMON-LISP-USER::OUT-SWITCH in DEFUN
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/run-time.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/run-time.lisp
+; in: DEFUN ->HMS-NEW
+;     (CTIME-HOUR TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CTIME-HOUR
+
+;     (CTIME-MINUTE TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CTIME-MINUTE
+
+;     (CTIME-SECOND TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CTIME-SECOND
+
+;     (NUMBER->STRING (COND ((<= HOUR 12) HOUR) (T (- HOUR 12))) 2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NUMBER->STRING
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CTIME-HOUR CTIME-MINUTE CTIME-SECOND NUMBER->STRING
+;   caught 4 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFMETHOD PRETTY-PRINT (DATE T)
+;     (DATE_MONTH_NAME SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE_MONTH_NAME
+
+;     (DATE_WEEKDAY_NAME SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE_WEEKDAY_NAME
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DATE_MONTH_NAME DATE_WEEKDAY_NAME
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN DATE_WEEKDAY_NAME
+;     (GET-WEEKDAY DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-WEEKDAY
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-WEEKDAY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN DATE-ADD
+;     (ADD-DAYS NEW-DATE (DATE-DAY DATE2))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ADD-DAYS
+
+;     (ADD-MONTHS (ADD-DAYS NEW-DATE (DATE-DAY DATE2)) (DATE-MONTH DATE2))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ADD-MONTHS
+
+;     (ADD-YEARS
+;      (ADD-MONTHS (ADD-DAYS NEW-DATE (DATE-DAY DATE2)) (DATE-MONTH DATE2))
+;      (DATE-YEAR DATE2))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ADD-YEARS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ADD-DAYS ADD-MONTHS ADD-YEARS
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN ADD-DAYS
+;     (NORMALIZE-DATE NEW-DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NORMALIZE-DATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     NORMALIZE-DATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN NORMALIZE-DATE
+;     (DAYS-PER-MONTH NEW-DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DAYS-PER-MONTH
+; 
+; compilation unit finished
+;   Undefined function:
+;     DAYS-PER-MONTH
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN DAYS-PER-MONTH
+;     (DAYS-PER-MONTH-AUX (DATE-MONTH DATE) (DATE-YEAR DATE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DAYS-PER-MONTH-AUX
+; 
+; compilation unit finished
+;   Undefined function:
+;     DAYS-PER-MONTH-AUX
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN DAYS-BETWEEN
+;     (DATE-BEFORE? DATE1 DATE2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE-BEFORE?
+
+;     (JULIAN-DATE DATE1 START-YEAR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JULIAN-DATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DATE-BEFORE? JULIAN-DATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN YESTERDAY
+;     (TODAY)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TODAY
+; 
+; compilation unit finished
+;   Undefined function:
+;     TODAY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN INIT-DATE-TABLE
+;     (UPDATE-WEEK-IN-DATE-TABLE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-WEEK-IN-DATE-TABLE
+; 
+; compilation unit finished
+;   Undefined function:
+;     UPDATE-WEEK-IN-DATE-TABLE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN UPDATE-WEEK-IN-DATE-TABLE
+;     (INTERN-DATE (LIST DAY))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INTERN-DATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     INTERN-DATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN INTERN-DATE
+;     (DATE? DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+
+;     (LIST->DATE DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LIST->DATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DATE? LIST->DATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN LIST->DATE
+;     (ADD-DURATION NEW-DATE L 0)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ADD-DURATION
+
+;     (CONVERT-DATE NEW-DATE L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CONVERT-DATE
+
+;     (SOME #'DURATION? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DURATION?
+
+;     (DYNAMIC-DATE-CHECK L NEW-DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DYNAMIC-DATE-CHECK
+
+;     (ISA-DATE? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISA-DATE?
+
+;     (SET-WEEKDAY NEW-DATE L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-WEEKDAY
+
+;     (SOME #'WEEKDAY? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::WEEKDAY?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ADD-DURATION CONVERT-DATE DURATION? DYNAMIC-DATE-CHECK ISA-DATE? SET-WEEKDAY WEEKDAY?
+;   caught 7 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN SET-WEEKDAY
+;     (WEEKDAY? (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::WEEKDAY?
+; 
+; compilation unit finished
+;   Undefined function:
+;     WEEKDAY?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN ISA-DATE?
+;     (SOME #'DAY? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DAY?
+
+;     (SOME #'MONTH? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MONTH?
+
+;     (SOME #'YEAR? L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::YEAR?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DAY? MONTH? YEAR?
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN CONVERT-DATE
+;     (DAY? (CADR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DAY?
+
+;     (MONTH->NUMBER (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MONTH->NUMBER
+
+;     (MONTH? (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MONTH?
+
+;     (YEAR? (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::YEAR?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DAY? MONTH->NUMBER MONTH? YEAR?
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/date.lisp
+; in: DEFUN ADD-DURATION
+;     (DURATION->NUMBERS (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DURATION->NUMBERS
+
+;     (DURATION? (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DURATION?
+
+;     (WORD->NUMBER (CAR L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::WORD->NUMBER
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DURATION->NUMBERS DURATION? WORD->NUMBER
+;   caught 3 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/utils/tables.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/utils/tables.lisp
+; in: DEFSTRUCT MY-TABLE
+;     (DEFSTRUCT
+;         (MY-TABLE (:PREDICATE MY-TABLE?)
+;          (:PRINT-FUNCTION (LAMBDA (P S K) (FORMAT S "#{My-table (~A) ~A}" # #)))
+;          (:CONC-NAME NIL))
+;       (TABLE (MAKE-HASH-TABLE) :TYPE HASH-TABLE)
+;       (NAME NIL :TYPE SYMBOL))
+; --> LET* SB-INT:NAMED-LAMBDA FUNCTION SYMBOL-MACROLET 
+; --> SB-PCL::FAST-LEXICAL-METHOD-FUNCTIONS 
+; --> SB-PCL::BIND-FAST-LEXICAL-METHOD-FUNCTIONS FLET SB-PCL::BIND-ARGS 
+; --> LET* LOCALLY SYMBOL-MACROLET BLOCK FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   The variable K is defined but never used.
+; 
+; compilation unit finished
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/specials_db.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN DBASE
+;     (INITIALIZE_DBASE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INITIALIZE_DBASE
+
+;     (PROCESS_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS_COMMAND
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INITIALIZE_DBASE PROCESS_COMMAND
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN INITIALIZE_DBASE
+;     (INIT-COMMAND-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-COMMAND-LIST
+; 
+; compilation unit finished
+;   Undefined function:
+;     INIT-COMMAND-LIST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN PROCESS_COMMAND
+;     (DB-ALL *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-ALL
+
+;     (DB-PROMPT *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-PROMPT
+
+;     (DB-UPDATE-LIST (FIND-ROOT-DB *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-UPDATE-LIST
+
+;     (FIND-ROOT-DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-ROOT-DB
+
+;     (PROCESS_COMMAND_INPUT INPUT *COMMAND-LIST*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS_COMMAND_INPUT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DB-ALL DB-PROMPT DB-UPDATE-LIST FIND-ROOT-DB PROCESS_COMMAND_INPUT
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN PROCESS_COMMAND_INPUT
+;     (CHECK_FOR_CURRENT-ITEMS_NUMBERS INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK_FOR_CURRENT-ITEMS_NUMBERS
+
+;     (DB-SYNONYM-TABLE (FIND-ROOT-DB *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-SYNONYM-TABLE
+
+;     (DB-TABLE *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-TABLE
+
+;     (FIND-ROOT-DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-ROOT-DB
+
+;     (HEADERS_COMMAND 'CURRENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::HEADERS_COMMAND
+
+;     (MAKE-COMMAND-ALIST COMMANDS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MAKE-COMMAND-ALIST
+
+;     (NORMAL_COMMAND_AND_UNDO INPUT-COMMAND COMMAND-ALIST INPUT-ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NORMAL_COMMAND_AND_UNDO
+
+;     (PROCESS_ALIASED_COMMAND INPUT-COMMAND INPUT-ARGS COMMANDS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS_ALIASED_COMMAND
+
+;     (SET-CURRENT-ITEMS *CURRENT-DB* (GETHASH WORD TABLE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-CURRENT-ITEMS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CHECK_FOR_CURRENT-ITEMS_NUMBERS DB-SYNONYM-TABLE DB-TABLE FIND-ROOT-DB HEADERS_COMMAND MAKE-COMMAND-ALIST NORMAL_COMMAND_AND_UNDO PROCESS_ALIASED_COMMAND SET-CURRENT-ITEMS
+;   caught 9 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN PROCESS_ALIASED_COMMAND
+;     (DB-ALIASES (FIND-ROOT-DB *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-ALIASES
+
+;     (FIND-ROOT-DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-ROOT-DB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DB-ALIASES FIND-ROOT-DB
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN NORMAL_COMMAND_AND_UNDO
+;     (COMMAND-ID CMD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-ID
+
+;     (COMMAND-PROCEDURE CMD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-PROCEDURE
+
+;     (PROCESS_UNDO_COMMAND CMD INPUT-ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS_UNDO_COMMAND
+; 
+; compilation unit finished
+;   Undefined functions:
+;     COMMAND-ID COMMAND-PROCEDURE PROCESS_UNDO_COMMAND
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN CHECK_FOR_CURRENT-ITEMS_NUMBERS
+;     (DECODE-NUMBERS INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECODE-NUMBERS
+
+;     (HEADERS_COMMAND 'CURRENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::HEADERS_COMMAND
+
+;     (SET-CURRENT-ITEMS *CURRENT-DB* NUM-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-CURRENT-ITEMS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECODE-NUMBERS HEADERS_COMMAND SET-CURRENT-ITEMS
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN GET-SELECTION-PREDICATE
+;     (ACTIVE? ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ACTIVE?
+
+;     (DATE? (SLOT-VALUE ITEM 'DATE-DUE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+
+;     (DB-ALL *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-ALL
+
+;     (DB-UPDATE-LIST (FIND-ROOT-DB *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-UPDATE-LIST
+
+;     (DECODE-NUMBERS ARG-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECODE-NUMBERS
+
+;     (DELETED? ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DELETED?
+
+;     (FIND-ROOT-DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-ROOT-DB
+
+;     (PENDING? ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PENDING?
+
+;     (SET-CURRENT-ITEMS *CURRENT-DB* NUM-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-CURRENT-ITEMS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ACTIVE? DATE? DB-ALL DB-UPDATE-LIST DECODE-NUMBERS DELETED? FIND-ROOT-DB PENDING? SET-CURRENT-ITEMS
+;   caught 9 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN DECODE-NUMBERS
+;     (PROCESS-NUMBER-ARG (CAR ARG-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-NUMBER-ARG
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROCESS-NUMBER-ARG
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN PROCESS-NUMBER-ARG
+;     (PROCESS-NUMBER-ARG-STR (FORMAT NIL "~A" L))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-NUMBER-ARG-STR
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROCESS-NUMBER-ARG-STR
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN FILTER-NUMBER-ARG-STRING
+;     (DB-ALL *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-ALL
+; 
+; compilation unit finished
+;   Undefined function:
+;     DB-ALL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN PROCESS-NUMBER-ARG-STR
+;     (PROCESS-NUMBER-ARGS-LIST
+;      (READ-STRING->LIST (FILTER-NUMBER-ARG-STRING STR-L)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-NUMBER-ARGS-LIST
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROCESS-NUMBER-ARGS-LIST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN POP-UPDATE
+;     (POP (DB-UPDATE-LIST (FIND-ROOT-DB DB)))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DB-UPDATE-LIST)
+
+; ==>
+;   (DB-UPDATE-LIST #:G1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB-UPDATE-LIST
+
+;     (FIND-ROOT-DB DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-ROOT-DB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF DB-UPDATE-LIST) DB-UPDATE-LIST FIND-ROOT-DB
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFCLASS DB
+;     (TABLE :DOCUMENTATION "key index table for db" :ACCESSOR DB-TABLE :INITARG
+;            :TABLE :TYPE HASH-TABLE :INITFORM NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type HASH-TABLE.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (PROMPT :ACCESSOR DB-PROMPT :INITARG :PROMPT :TYPE STRING :INITFORM NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type STRING.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (DATA-FILE :ACCESSOR DB-DATA-FILE :INITARG :DATA-FILE :TYPE STRING :INITFORM
+;      NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type STRING.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (PRINT-FILE :ACCESSOR DB-PRINT-FILE :INITARG :PRINT-FILE :TYPE STRING
+;      :INITFORM NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type STRING.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (COMPILE-DATE :ACCESSOR DB-COMPILE-DATE :INITARG :COMPILE-DATE :TYPE DATE
+;      :INITFORM NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type COMMON-LISP-USER::DATE.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (PRINT-DATE :ACCESSOR DB-PRINT-DATE :INITARG :PRINT-DATE :TYPE DATE :INITFORM
+;      NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type COMMON-LISP-USER::DATE.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (SYNONYM-TABLE :ACCESSOR DB-SYNONYM-TABLE :INITARG :SYNONYM-TABLE :TYPE
+;      HASH-TABLE :INITFORM NIL)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type HASH-TABLE.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+; 
+; compilation unit finished
+;   caught 7 WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFMETHOD PRETTY-PRINT (DB T)
+;     (CLASS-DIRECT-INSTANCE-SLOTS (CLASS-OF SELF))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLASS-DIRECT-INSTANCE-SLOTS
+
+;     (NO-PP-FIELDS SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NO-PP-FIELDS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CLASS-DIRECT-INSTANCE-SLOTS NO-PP-FIELDS
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFMETHOD SET-CURRENT-ITEMS (DB T)
+;     (CHECK-RANGE ITEM MAX-INDEX)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-RANGE
+; 
+; compilation unit finished
+;   Undefined function:
+;     CHECK-RANGE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFMETHOD INSERT-ITEM (DB T)
+;     (INDEX-INSERT-ITEM (DB-TABLE SELF) ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INDEX-INSERT-ITEM
+; 
+; compilation unit finished
+;   Undefined function:
+;     INDEX-INSERT-ITEM
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db.lisp
+; in: DEFUN INDEX-INSERT-ITEM
+;     (TABLE-INDEX-FIELDS ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TABLE-INDEX-FIELDS
+; 
+; compilation unit finished
+;   Undefined function:
+;     TABLE-INDEX-FIELDS
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/copy.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/copy.lisp
+; in: DEFUN COPY_COMMAND
+;     (GENERATE-SYMBOL (TYPE-OF NEW-ITEM))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GENERATE-SYMBOL
+
+;     (PUSH-UPDATE NEW-ITEM 'COPY_COMMAND *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GENERATE-SYMBOL PUSH-UPDATE
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN ACTIVE_COMMAND
+;     (SET_STATUS_COMMAND "Active")
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET_STATUS_COMMAND
+; 
+; compilation unit finished
+;   Undefined function:
+;     SET_STATUS_COMMAND
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN ADD_COMMAND
+;     (INPUT-VALUES ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INPUT-VALUES
+
+;     (PUSH-UPDATE ITEM 'ADD_COMMAND *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INPUT-VALUES PUSH-UPDATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN INPUT-VALUES
+;     (INPUT-PROTOTYPE ITEM SLOT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INPUT-PROTOTYPE
+; 
+; compilation unit finished
+;   Undefined function:
+;     INPUT-PROTOTYPE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN ALIAS_COMMAND
+;     (PUSH-UPDATE #'DB-ALIASES 'ALIAS_COMMAND DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     PUSH-UPDATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN AND_COMMAND
+;     (HEADERS_COMMAND '(CURRENT))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::HEADERS_COMMAND
+
+;     #'INTERSECT*
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INTERSECT*
+
+;     (MAPCAR #'KEYWORD-SELECT ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::KEYWORD-SELECT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     HEADERS_COMMAND INTERSECT* KEYWORD-SELECT
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN KEYWORD-SELECT
+;     (KEYWORD-SELECT2 INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::KEYWORD-SELECT2
+; 
+; compilation unit finished
+;   Undefined function:
+;     KEYWORD-SELECT2
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN APPEND_COMMAND
+;     (APPEND-FIELD SLOT (CDR ARGS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::APPEND-FIELD
+; 
+; compilation unit finished
+;   Undefined function:
+;     APPEND-FIELD
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN APPEND-FIELD
+;     (PUSH-UPDATE ITEM SLOT *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+
+;     (TABLE-INDEX-FIELDS ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TABLE-INDEX-FIELDS
+
+;     (UPDATE-PROTOTYPE (CAR ITEMS) SLOT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-PROTOTYPE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PUSH-UPDATE TABLE-INDEX-FIELDS UPDATE-PROTOTYPE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN APPEND_UNDO
+;     (UNDO-FIELD (CAAR ARGS) (CDR ARGS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UNDO-FIELD
+; 
+; compilation unit finished
+;   Undefined function:
+;     UNDO-FIELD
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN CHANGE_DB_COMMAND
+;     (INIT-COMMAND-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-COMMAND-LIST
+; 
+; compilation unit finished
+;   Undefined function:
+;     INIT-COMMAND-LIST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN MAKE_DB_COMMAND
+;     (SET_NEW_DB_PROMPT NEW-DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET_NEW_DB_PROMPT
+; 
+; compilation unit finished
+;   Undefined function:
+;     SET_NEW_DB_PROMPT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN MAKE_DB_UNDO
+;     (UNDO-FIELD 'DB ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UNDO-FIELD
+; 
+; compilation unit finished
+;   Undefined function:
+;     UNDO-FIELD
+;   caught 1 STYLE-WARNING condition
+STYLE-WARNING:
+   Defining (*SPLIT-FILE-SIZE*) as a constant, even though the name follows
+the usual naming convention (names like *FOO*) for special variables
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN COMPILE_COMMAND
+;     (RUN-TIME
+;      (LET ((DB (FIND-ROOT-DB *CURRENT-DB*)))
+;        (COND ((NULL #) (FORMAT T "~%No data loaded to compile.~%"))
+;              (ELSE (SAVE_COMMAND)
+;               (LET* #
+;                 #
+;                 #
+;                 #
+;                 #
+;                 #
+;                 #)))))
+; --> PROG1 LET PROGN SETF SETQ THE 
+; ==>
+;   (CURRENT_TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CURRENT_TIME
+
+;     (FILE-CREATE-DATE UPDATEFILE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILE-CREATE-DATE
+
+;     (PUSH-UPDATE #'DB-COMPILE-DATE 'COMPILE_COMMAND DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+
+;     (MAPC #'SAFE-COMPILE-FILE OUTFILES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAFE-COMPILE-FILE
+
+;     (SAVE_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_COMMAND
+
+;     (SAVE_UPDATES_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_UPDATES_COMMAND
+
+;     (SPLIT_FILE DATAFILE *SPLIT-FILE-SIZE*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SPLIT_FILE
+
+;     (RUN-TIME
+;      (LET ((DB (FIND-ROOT-DB *CURRENT-DB*)))
+;        (COND ((NULL #) (FORMAT T "~%No data loaded to compile.~%"))
+;              (ELSE (SAVE_COMMAND)
+;               (LET* #
+;                 #
+;                 #
+;                 #
+;                 #
+;                 #
+;                 #)))))
+; --> PROG1 LET PROGN 
+; ==>
+;   (TIME-STAMP *STANDARD-OUTPUT*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-STAMP
+
+; --> PROG1 LET PROGN FORMAT ->HMS-NEW 
+; ==>
+;   (TIME-SUBTRACT FINISH START)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-SUBTRACT
+
+;     (UPDATE-FILE DATAFILE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-FILE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CURRENT_TIME FILE-CREATE-DATE PUSH-UPDATE SAFE-COMPILE-FILE SAVE_COMMAND SAVE_UPDATES_COMMAND SPLIT_FILE TIME-STAMP TIME-SUBTRACT UPDATE-FILE
+;   caught 10 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN SAFE-COMPILE-FILE
+;     (FILE-CREATE-DATE OBJECT-FILE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILE-CREATE-DATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     FILE-CREATE-DATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN SPLIT_FILE
+;     (FILE-CREATE-DATE OUTFILE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILE-CREATE-DATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     FILE-CREATE-DATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN COMPILE_DATE_COMMAND
+;     (DATE? DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+; 
+; compilation unit finished
+;   Undefined function:
+;     DATE?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN COMPLETED_COMMAND
+;     (SET_STATUS_COMMAND "Completed")
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET_STATUS_COMMAND
+; 
+; compilation unit finished
+;   Undefined function:
+;     SET_STATUS_COMMAND
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN DELETE_COMMAND
+;     (SET_STATUS_COMMAND "Deleted")
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET_STATUS_COMMAND
+; 
+; compilation unit finished
+;   Undefined function:
+;     SET_STATUS_COMMAND
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN SET_STATUS_COMMAND
+;     (PUSH-UPDATE ITEM 'SET_STATUS_COMMAND *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined function:
+;     PUSH-UPDATE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN STATUS_UNDO
+;     (UNDO-FIELD 'STATUS ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UNDO-FIELD
+; 
+; compilation unit finished
+;   Undefined function:
+;     UNDO-FIELD
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN EXIT_COMMAND
+;     (QUIT_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::QUIT_COMMAND
+
+;     (SAVE_UPDATES_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_UPDATES_COMMAND
+; 
+; compilation unit finished
+;   Undefined functions:
+;     QUIT_COMMAND SAVE_UPDATES_COMMAND
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN EXPUNGE_COMMAND
+;     #'DELETED?
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DELETED?
+
+;     (HEADERS_COMMAND 'DELETED)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::HEADERS_COMMAND
+
+;     (SORT_COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SORT_COMMAND
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DELETED? HEADERS_COMMAND SORT_COMMAND
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN GET_COMMAND
+;     (CLEAR-UPDATE-LIST *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLEAR-UPDATE-LIST
+
+;     (MAPC #'INTERN-SYNONYMS (DB-SYNONYM-ALIST *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INTERN-SYNONYMS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CLEAR-UPDATE-LIST INTERN-SYNONYMS
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN HELP_COMMAND
+;     (COMMAND-HELP CMD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-HELP
+
+;     (COMMAND-NAMES CMD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-NAMES
+
+;     (MEMQ CMD (COMMAND-NAMES (CAR COMMANDS)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMQ
+; 
+; compilation unit finished
+;   Undefined functions:
+;     COMMAND-HELP COMMAND-NAMES MEMQ
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds.lisp
+; in: DEFUN HELP_COMMAND_SHORT
+;     (COMMAND-NAMES C)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-NAMES
+; 
+; compilation unit finished
+;   Undefined function:
+;     COMMAND-NAMES
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN MOVE_COMMAND
+;     (MOVE-ITEM ITEM *CURRENT-DB* NEW_DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MOVE-ITEM
+
+;     (PUSH-UPDATE ITEM 'MOVE_COMMAND NEW_DB *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     MOVE-ITEM PUSH-UPDATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN MOVE-ITEM
+;     (DB ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DB
+; 
+; compilation unit finished
+;   Undefined function:
+;     DB
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN PRINT_COMMAND
+;     #'PRINT-HC
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-HC
+
+;     (PUSH-UPDATE #'DB-PRINT-DATE 'PRINT_COMMAND DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+
+;     (TIME-STAMP STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-STAMP
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PRINT-HC PUSH-UPDATE TIME-STAMP
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN PRINT_DATE_COMMAND
+;     (DATE? DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+; 
+; compilation unit finished
+;   Undefined function:
+;     DATE?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN SAVE_COMMAND
+;     (FILE-CREATE-DATE DATAFILE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILE-CREATE-DATE
+
+;     (SAVE_ALIAS_LIST STREAM ROOT-DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_ALIAS_LIST
+
+;     (SAVE_CHILD_DB ROOT-DB STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_CHILD_DB
+
+;     (SAVE_COMPLETED_ITEMS DATAFILE (SAVE_CHILD_DB ROOT-DB STREAM))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_COMPLETED_ITEMS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     FILE-CREATE-DATE SAVE_ALIAS_LIST SAVE_CHILD_DB SAVE_COMPLETED_ITEMS
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN SAVE_CHILD_DB
+;     (SETF (DATE-CLOSED ITEM) (CURRENT_DATE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DATE-CLOSED)
+
+;     (CLOSED? ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLOSED?
+
+;     (DATE-CLOSED ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE-CLOSED
+
+;     (DELETED? ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DELETED?
+
+;     (ITEM-DB ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ITEM-DB
+
+;     (PRINT-READABLE-ITEM ITEM STREAM DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-READABLE-ITEM
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF DATE-CLOSED) CLOSED? DATE-CLOSED DELETED? ITEM-DB PRINT-READABLE-ITEM
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN SAVE_UPDATES_COMMAND
+;     (CLEAR-UPDATE-LIST *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLEAR-UPDATE-LIST
+
+;     (SAVE_UPDATE_ITEM ITEM+DB STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAVE_UPDATE_ITEM
+
+;     (UPDATE-FILE (DB-DATA-FILE (FIND-ROOT-DB *CURRENT-DB*)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-FILE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CLEAR-UPDATE-LIST SAVE_UPDATE_ITEM UPDATE-FILE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN SYNONYM_COMMAND
+;     (INTERN-SYNONYMS ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INTERN-SYNONYMS
+
+;     (PUSH-UPDATE #'DB-SYNONYM-ALIST 'SYNONYM_COMMAND DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INTERN-SYNONYMS PUSH-UPDATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN PROCESS_UNDO_COMMAND
+;     (COMMAND-ID COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-ID
+
+;     (COMMAND-UNDO COMMAND)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMMAND-UNDO
+; 
+; compilation unit finished
+;   Undefined functions:
+;     COMMAND-ID COMMAND-UNDO
+;   caught 2 STYLE-WARNING conditions
+STYLE-WARNING:
+   Previously compiled calls to COMMON-LISP-USER::COMMAND-ID,
+   COMMON-LISP-USER::COMMAND-NAMES, COMMON-LISP-USER::COMMAND-PROCEDURE,
+   COMMON-LISP-USER::COMMAND-HELP and COMMON-LISP-USER::COMMAND-UNDO could not
+   be inlined because the structure definition for COMMON-LISP-USER::COMMAND
+   was not yet seen. To avoid this warning, DEFSTRUCT should precede references
+   to the affected functions, or they must be declared locally notinline at
+   each call site.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN INIT-COMMAND-LIST
+;     #'EDIT_COMMAND
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EDIT_COMMAND
+
+;     #'EDIT_UNDO
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EDIT_UNDO
+
+;     (MAKE-COMMAND-ALIST *COMMAND-LIST*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MAKE-COMMAND-ALIST
+
+;     #'SORT_COMMAND
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SORT_COMMAND
+
+;     (UNDO-FIELD ID ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UNDO-FIELD
+
+;     (UPDATE-FIELD ID ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-FIELD
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EDIT_COMMAND EDIT_UNDO MAKE-COMMAND-ALIST SORT_COMMAND UNDO-FIELD UPDATE-FIELD
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN MAKE-COMMAND-ALIST
+;     (MAKE-ALIST (COMMAND-NAMES (CAR CMD-LIST)) (CAR CMD-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MAKE-ALIST
+; 
+; compilation unit finished
+;   Undefined function:
+;     MAKE-ALIST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/db_cmds2.lisp
+; in: DEFUN UPDATE-FIELD
+;     (PUSH-UPDATE ITEM SLOT *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+
+;     (TABLE-INDEX-FIELDS ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TABLE-INDEX-FIELDS
+
+;     (UPDATE-PROTOTYPE (CAR (DB-CURRENT-ITEMS *CURRENT-DB*)) SLOT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-PROTOTYPE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PUSH-UPDATE TABLE-INDEX-FIELDS UPDATE-PROTOTYPE
+;   caught 3 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/edit.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/edit.lisp
+; in: DEFUN EDIT_COMMAND
+;     (EDIT-FIELD SLOT (CDR ARGS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EDIT-FIELD
+; 
+; compilation unit finished
+;   Undefined function:
+;     EDIT-FIELD
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/edit.lisp
+; in: DEFUN EDIT-FIELD
+;     (EDIT-ITEM OLD_VAL NIL PROC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EDIT-ITEM
+
+;     (PUSH-UPDATE ITEM 'SLOT *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PUSH-UPDATE
+
+;     (UPDATE-PROTOTYPE (CAR ITEMS) SLOT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-PROTOTYPE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EDIT-ITEM PUSH-UPDATE UPDATE-PROTOTYPE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/edit.lisp
+; in: DEFUN EDIT-ITEM
+;     (EDIT-COMBINE NEW-VAL (FUNCALL PROC))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EDIT-COMBINE
+
+;     (PROMPT-EDIT-ITEM (CAR OLD-VAL))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPT-EDIT-ITEM
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EDIT-COMBINE PROMPT-EDIT-ITEM
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/note.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/dbs/record.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/dbs/record.lisp
+; in: DEFCLASS RECORD
+;     (INDEX :INITFORM NIL :TYPE INTEGER :ACCESSOR INDEX)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type INTEGER.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+
+;     (SUBJECT :INITFORM NIL :DOCUMENTATION "text header" :ACCESSOR SUBJECT :TYPE
+;      STRING)
+; 
+; caught WARNING:
+;   Constant NIL conflicts with its asserted type STRING.
+;   See also:
+;     The SBCL Manual, Node "Handling of Types"
+; 
+; compilation unit finished
+;   caught 2 WARNING conditions
+WARNING: redefining COMMON-LISP-USER::ALL-THE-SLOTS in DEFGENERIC
+WARNING: redefining COMMON-LISP-USER::NO-PP-FIELDS in DEFGENERIC
+WARNING: redefining COMMON-LISP-USER::NO-PRINT-READABLE-FIELDS in DEFGENERIC
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/db/dbs/record.lisp
+; in: DEFMETHOD OPEN? (RECORD)
+;     (CLOSED? SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLOSED?
+; 
+; compilation unit finished
+;   Undefined function:
+;     CLOSED?
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/specials_gen.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN CLUSTER-OBJS
+;     (CLUSTER-OBJS2 SL NIL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CLUSTER-OBJS2
+
+;     (SET-SORT-KEY STANCE 'IMPSIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-SORT-KEY
+
+;     (STANCE-P (CAR OBJ-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CLUSTER-OBJS2 SET-SORT-KEY STANCE-P
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN CLUSTER-OBJS2
+;     (IMP-SIDE-EQ? (CAR OBJ-LIST) (CAR CLUSTER))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::IMP-SIDE-EQ?
+; 
+; compilation unit finished
+;   Undefined function:
+;     IMP-SIDE-EQ?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN IMP-SIDE-EQ?
+;     (GET-IMPORTANCE OBJ1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-IMPORTANCE
+
+;     (GET-SIDE OBJ1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-IMPORTANCE GET-SIDE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN SAY-CLUSTER-REASONS
+;     (SAY-REASON-CLUSTERS SUBJ CLUSTER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-REASON-CLUSTERS
+; 
+; compilation unit finished
+;   Undefined function:
+;     SAY-REASON-CLUSTERS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN SAY-REASON-CLUSTERS
+;     (ENG-STANCE SUBJECT (CAR STANCE-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE
+
+;     (ENG-STANCE-CLUSTERS STANCE-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE-CLUSTERS
+
+;     (ENG-STANCE2 SUBJECT (CAR STANCE-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE2
+
+;     (GEN-NP SUBJECT 'SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENG-STANCE ENG-STANCE-CLUSTERS ENG-STANCE2 GEN-NP
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN ENG-STANCE-CLUSTERS
+;     (ENG-STANCE-ISSUE (CAR STANCE-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE-ISSUE
+
+;     (GEN-CONJUNCTION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-CONJUNCTION
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENG-STANCE-ISSUE GEN-CONJUNCTION
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/clusters.lisp
+; in: DEFUN GEN-CONJUNCTION
+;     (GEN-PICK-ONE "and " "and " "as well as " "in addition to " "and moreover ")
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+; 
+; compilation unit finished
+;   Undefined function:
+;     GEN-PICK-ONE
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/context.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/context.lisp
+; in: DEFMETHOD PRETTY-PRINT (CONTEXT T)
+;     (ENGLISH K)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH
+; 
+; compilation unit finished
+;   Undefined function:
+;     ENGLISH
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/context.lisp
+; in: DEFMETHOD USE-PRONOUN? (CONTEXT T)
+;     (GEN-GET-FEATURE NP 'USE-PRONOUN)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-GET-FEATURE
+; 
+; compilation unit finished
+;   Undefined function:
+;     GEN-GET-FEATURE
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFMETHOD ENGLISH (T)
+;     (RECORD-P SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RECORD-P
+; 
+; compilation unit finished
+;   Undefined function:
+;     RECORD-P
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENG-STANCE
+;     (ENG-STANCE-ISSUE ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE-ISSUE
+
+;     (ENG-STANCE2 SUBJECT ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-STANCE2
+
+;     (FLIP-STANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FLIP-STANCE
+
+;     (GEN-NP SUBJECT 'SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENG-STANCE-ISSUE ENG-STANCE2 FLIP-STANCE GEN-NP
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN FLIP-STANCE
+;     (SETF (STANCE-ISSUE ST1) OPP)
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-ISSUE)
+
+;     (SETF (STANCE-ISSUE-STRUCTURE ST1) (GET-NODE OPP ISSUE))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-ISSUE-STRUCTURE)
+
+;     (SETF (STANCE-SIDE ST1) 'PRO)
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-SIDE)
+
+;     (GET-NODE OPP ISSUE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (ISSUE-OPPOSITE (REVEAL-ISSUE STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-OPPOSITE
+
+;     (REVEAL-ISSUE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-ISSUE
+
+;     (STANCE-SIDE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF STANCE-ISSUE) (SETF STANCE-ISSUE-STRUCTURE) (SETF STANCE-SIDE) GET-NODE ISSUE-OPPOSITE REVEAL-ISSUE STANCE-SIDE
+;   caught 7 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENG-STANCE2
+;     (ENGLISH-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-CON
+
+;     (ENGLISH-ISSUE-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-ISSUE-CON
+
+;     (ENGLISH-ISSUE-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-ISSUE-PRO
+
+;     (ENGLISH-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-PRO
+
+;     (ENGLISH-RECORD-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-RECORD-CON
+
+;     (ENGLISH-RECORD-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-RECORD-PRO
+
+;     (IS-ISSUE? SUBJECT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::IS-ISSUE?
+
+;     (IS-RECORD? SUBJECT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::IS-RECORD?
+
+;     (STANCE-SIDE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENGLISH-CON ENGLISH-ISSUE-CON ENGLISH-ISSUE-PRO ENGLISH-PRO ENGLISH-RECORD-CON ENGLISH-RECORD-PRO IS-ISSUE? IS-RECORD? STANCE-SIDE
+;   caught 9 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFMETHOD IS-ISSUE? (T)
+;     (BILL-P SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-P
+
+;     (ISSUE-P SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     BILL-P ISSUE-P
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENG-STANCE-ISSUE
+;     (<IMPORTANT? 'C (STANCE-IMPORTANCE STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::<IMPORTANT?
+
+;     (ENGLISH-ISSUE-PHRASE ISS SIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-ISSUE-PHRASE
+
+;     (ENGLISH-SHORT ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-SHORT
+
+;     (ISSUE-CON-ENGLISH ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-CON-ENGLISH
+
+;     (ISSUE-PRO-ENGLISH ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-PRO-ENGLISH
+
+;     (REVEAL-ISSUE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-ISSUE
+
+;     (SARCASM?)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SARCASM?
+
+;     (STANCE-IMPORTANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+
+;     (STANCE-SIDE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     <IMPORTANT? ENGLISH-ISSUE-PHRASE ENGLISH-SHORT ISSUE-CON-ENGLISH ISSUE-PRO-ENGLISH REVEAL-ISSUE SARCASM? STANCE-IMPORTANCE STANCE-SIDE
+;   caught 9 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENGLISH-ISSUE-PHRASE
+;     (FLIP-SIDE SIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FLIP-SIDE
+
+;     (GEN-PICK-ONE NIL "the belief in" "the principle of")
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (ISSUE-TYPE ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-TYPE
+
+;     (SARCASM?)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SARCASM?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     FLIP-SIDE GEN-PICK-ONE ISSUE-TYPE SARCASM?
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN GET-IMPORTANCE
+;     (RELATION-IMPORTANCE OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-IMPORTANCE
+
+;     (RELATION-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-P
+
+;     (STANCE-IMPORTANCE OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+
+;     (STANCE-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RELATION-IMPORTANCE RELATION-P STANCE-IMPORTANCE STANCE-P
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN GET-SIDE
+;     (RELATION-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-P
+
+;     (RELATION-SIDE OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-SIDE
+
+;     (STANCE-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+
+;     (STANCE-SIDE OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RELATION-P RELATION-SIDE STANCE-P STANCE-SIDE
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENGLISH-PRO
+;     (GEN-PICK-ONE
+;      (FORMAT NIL "~A unwavering in ~A support of"
+;              (GEN-VERB SUBJECT "be" NIL 'PRESENT) (GEN-PRONOUN SUBJECT 'POSS))
+;      (FORMAT NIL "~A ~A long-standing support of"
+;              (GEN-VERB SUBJECT "stress" NIL 'PRESENT)
+;              (GEN-PRONOUN SUBJECT 'POSS))
+;      (FORMAT NIL "~A ~A deep-rooted support of"
+;              (GEN-VERB SUBJECT "emphasize" NIL 'PRESENT)
+;              (GEN-PRONOUN SUBJECT 'POSS))
+;      (FORMAT NIL "unwaveringly ~A" (GEN-VERB SUBJECT "endorse" NIL 'PRESENT))
+;      (FORMAT NIL "completely ~A" (GEN-VERB SUBJECT "support" NIL 'PRESENT))
+;      (FORMAT NIL "~A a champion of" (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A a staunch defender of" (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A deeply committed to" (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A always stood for" (GEN-VERB SUBJECT "have" NIL 'PRESENT))
+;      (FORMAT NIL "~A always felt strongly about"
+;              (GEN-VERB SUBJECT "have" NIL 'PRESENT))
+;      (FORMAT NIL "~A always believed in" (GEN-VERB SUBJECT "have" NIL 'PRESENT)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (GEN-PRONOUN SUBJECT 'POSS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PRONOUN
+
+;     (GEN-VERB SUBJECT "be" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-PICK-ONE GEN-PRONOUN GEN-VERB
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENGLISH-CON
+;     (GEN-NP SUBJECT 'POSS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+
+;     (GEN-PICK-ONE
+;      (FORMAT NIL "~A unwavering in ~A opposition to"
+;              (GEN-VERB SUBJECT "be" NIL 'PRESENT) (GEN-PRONOUN SUBJECT 'POSS))
+;      (FORMAT NIL "~A ~A of" (GEN-VERB SUBJECT "be" NIL 'PRESENT)
+;              (IF (SINGULAR? SUBJECT)
+;                  "a longtime opponent"
+;                  "longtime opponents"))
+;      (FORMAT NIL "~A adamantly opposed to" (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A till ~A dying day" (GEN-VERB SUBJECT "oppose" NIL 'FUTURE)
+;              (GEN-NP SUBJECT 'POSS))
+;      (FORMAT NIL "~A never supported" (GEN-VERB SUBJECT "have" NIL 'PRESENT)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (GEN-PRONOUN SUBJECT 'POSS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PRONOUN
+
+;     (GEN-VERB SUBJECT "be" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+
+;     (SINGULAR? SUBJECT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SINGULAR?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-NP GEN-PICK-ONE GEN-PRONOUN GEN-VERB SINGULAR?
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENGLISH-ISSUE-PRO
+;     (GEN-PICK-ONE
+;      (FORMAT NIL "~A an essential element of"
+;              (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A always part of" (GEN-VERB SUBJECT "be" NIL 'PRESENT))
+;      (FORMAT NIL "~A of fundamental importance for"
+;              (GEN-VERB SUBJECT "be" NIL 'PRESENT)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (GEN-VERB SUBJECT "be" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+
+;     (STANCE-IMPORTANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-PICK-ONE GEN-VERB STANCE-IMPORTANCE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENGLISH-ISSUE-CON
+;     (GEN-PICK-ONE
+;      (FORMAT NIL "strongly ~A" (GEN-VERB SUBJECT "oppose" NIL 'PRESENT))
+;      (FORMAT NIL "~A completely against" (GEN-VERB SUBJECT "stand" NIL 'PRESENT)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (GEN-VERB SUBJECT "oppose" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+
+;     (STANCE-IMPORTANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-PICK-ONE GEN-VERB STANCE-IMPORTANCE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN ENG-TEST
+;     (GEN-NORM-NP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NORM-NP
+
+;     (GET-NODE 'ACLU GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (INIT-STANCE (LIST ISS SIDE IMP (GET-NODE 'ACLU GROUP)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-STANCE
+
+;     (ISSUE-NORM ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-NORM
+
+;     (ISSUE-P ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-P
+
+;     (ISSUE-TYPE ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-TYPE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-NORM-NP GET-NODE INIT-STANCE ISSUE-NORM ISSUE-P ISSUE-TYPE
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN NORM-TEST
+;     (ENG-TEST-GROUP (GEN-PICK-ONE 'PRO 'CON) (GEN-PICK-ONE 'A 'B 'C) (LIST OBJ))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-TEST-GROUP
+
+;     (GEN-NORM-NP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NORM-NP
+
+;     (GEN-PICK-ONE 'PRO 'CON)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PICK-ONE
+
+;     (GROUP-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-P
+
+;     (ISSUE-P OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-P
+
+;     (NORM? OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NORM?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENG-TEST-GROUP GEN-NORM-NP GEN-PICK-ONE GROUP-P ISSUE-P NORM?
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN GEN-GROUP-STANCES
+;     (GET-NODE G GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (GROUP-P G)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-P
+
+;     (GROUP-STANCES GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-STANCES
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE GROUP-P GROUP-STANCES
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN SAY-P/C
+;     (GET-NODE ISS ISSUE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (ISSUE-CON-STANCES I)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-CON-STANCES
+
+;     (ISSUE-P ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-P
+
+;     (ISSUE-PRO-STANCES I)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-PRO-STANCES
+
+;     (SAY-OPPOSITE ISS STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-OPPOSITE
+
+;     (SAY-SIDE I 'PRO PRO STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE ISSUE-CON-STANCES ISSUE-P ISSUE-PRO-STANCES SAY-OPPOSITE SAY-SIDE
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN SAY-SIDE
+;     (GEN-NP ISS 'OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+
+;     (PROTO-DNP ISSUE-NP 'NUMBER 'SING 'ISSUE T 'LEX
+;      (CONCATENATE 'STRING PHRASE (GEN-NP ISS 'OBJ)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTO-DNP
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-NP PROTO-DNP
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/english.lisp
+; in: DEFUN SAY-OPPOSITE
+;     (GEN-NP ISS 'SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+
+;     (GET-NODE (ISSUE-OPPOSITE ISS) ISSUE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (ISSUE-OPPOSITE ISS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-OPPOSITE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-NP GET-NODE ISSUE-OPPOSITE
+;   caught 3 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/gen_utils.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/gen_utils.lisp
+; in: DEFUN NORM?
+;     (GROUP-NORM (REVEAL-GROUP STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-NORM
+
+;     (ISSUE-NORM (REVEAL-ISSUE STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-NORM
+
+;     (RELATION-P STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-P
+
+;     (REVEAL-GROUP STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-GROUP
+
+;     (REVEAL-ISSUE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-ISSUE
+
+;     (STANCE-P STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GROUP-NORM ISSUE-NORM RELATION-P REVEAL-GROUP REVEAL-ISSUE STANCE-P
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/gen_utils.lisp
+; in: DEFUN GET-SUBJECT
+;     (BILL-P SOURCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-P
+
+;     (GEN-NORM-NP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NORM-NP
+
+;     (GROUP-P SOURCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-P
+
+;     (MEMBER-P SOURCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMBER-P
+
+;     (REVEAL-SOURCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-SOURCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     BILL-P GEN-NORM-NP GROUP-P MEMBER-P REVEAL-SOURCE
+;   caught 5 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/bill-english.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/bill-english.lisp
+; in: DEFUN SAY-BILL-P/C
+;     (BILL-P BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-P
+
+;     (BILL-STANCE-AGN I)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-STANCE-AGN
+
+;     (BILL-STANCE-FOR I)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-STANCE-FOR
+
+;     (GET-NODE BILLID BILL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (SAY-BILL-SIDE I 'PRO PRO STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-BILL-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     BILL-P BILL-STANCE-AGN BILL-STANCE-FOR GET-NODE SAY-BILL-SIDE
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/bill-english.lisp
+; in: DEFUN SAY-BILL-SIDE
+;     (GEN-NP BILL 'OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-NP
+
+;     (PROTO-DNP BILL-NP 'BILL T 'USE-NOUN T 'LEX
+;      (CONCATENATE 'STRING PHRASE (GEN-NP BILL 'OBJ)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTO-DNP
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-NP PROTO-DNP
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN GEN-NP
+;     (->POSSESSIVE (GEN-NP OBJ 'SUBJ))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::->POSSESSIVE
+
+;     (ENGLISH-SHORT OBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-SHORT
+
+;     (GEN-PRONOUN OBJ CASE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PRONOUN
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ->POSSESSIVE ENGLISH-SHORT GEN-PRONOUN
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN ->POSSESSIVE
+;     (STRING-LAST NP-STR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-LAST
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-LAST
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN TEST-GROUPS
+;     (GET-NODE G GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-NODE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN XGEN-PRONOUN
+;     (GEN-GET-FEATURE OBJECT 'GENDER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-GET-FEATURE
+
+;     (GEN-PRONOUN2 (LIST GENDER NUMBER PERSON CASE HUMAN))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PRONOUN2
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-GET-FEATURE GEN-PRONOUN2
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN GEN-PRONOUN
+;     (DEFUN GEN-PRONOUN (OBJECT CASE)
+;       (LET ((GENDER 'MALE) (NUMBER 'SING) (PERSON 'THIRD) (HUMAN 'T))
+;         (GEN-PRONOUN2 (LIST GENDER NUMBER PERSON CASE HUMAN))))
+; 
+; caught STYLE-WARNING:
+;   The variable OBJECT is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN GEN-PRONOUN
+;     (GEN-PRONOUN2 (LIST GENDER NUMBER PERSON CASE HUMAN))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-PRONOUN2
+; 
+; compilation unit finished
+;   Undefined function:
+;     GEN-PRONOUN2
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/nouns.lisp
+; in: DEFUN GEN-GET-FEATURE
+;     (GET-NP (CLASS-NAME (CLASS-OF OBJECT)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NP
+
+;     (INSTANCE-P OBJECT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INSTANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NP INSTANCE-P
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/np.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/np.lisp
+; in: DEFUN PROTO-DNP
+;     (DNP2 NP L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DNP2
+; 
+; compilation unit finished
+;   Undefined function:
+;     DNP2
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/np.lisp
+; in: DEFUN DNP
+;     (DNP2 NP L)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DNP2
+; 
+; compilation unit finished
+;   Undefined function:
+;     DNP2
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/generics.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp
+; in: DEFUN PREAMBLE
+;     (DECISION-STRATEGY DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-STRATEGY
+
+;     (SAY-RESULT DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-RESULT
+
+;     (STRATEGY-PREAMBLE STRAT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRATEGY-PREAMBLE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECISION-STRATEGY SAY-RESULT STRATEGY-PREAMBLE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp
+; in: DEFUN SAY-RESULT
+;     (BILL-BNUMBER BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL-BNUMBER
+
+;     (DECISION-BILL DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-BILL
+
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+
+;     (DECISION-RESULT DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-RESULT
+
+;     (GEN-VERB MEMB VERB NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+
+;     (PICK-VOTE-PHRASE (DECISION-RESULT DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PICK-VOTE-PHRASE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     BILL-BNUMBER DECISION-BILL DECISION-MEMBER DECISION-RESULT GEN-VERB PICK-VOTE-PHRASE
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp
+; in: DEFUN PREAMBLE-NON-PARTISAN
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+
+;     (DECISION-MI-CREDO DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MI-CREDO
+
+;     (GEN-VERB SUBJ "believe" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECISION-MEMBER DECISION-MI-CREDO GEN-VERB
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp
+; in: DEFUN PREAMBLE-BELIEVE-TEMPLATE
+;     (DECISION-DEEPER-ANALYSIS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DEEPER-ANALYSIS
+
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+
+;     (DECISION-RESULT DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-RESULT
+
+;     (GEN-VERB SUBJ "believe" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECISION-DEEPER-ANALYSIS DECISION-MEMBER DECISION-RESULT GEN-VERB
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/preamble.lisp
+; in: DEFUN PREAMBLE-PARTISAN
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+
+;     (GEN-VERB SUBJ "be" NIL 'PRESENT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB
+
+;     (MEMBER-PARTY SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMBER-PARTY
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECISION-MEMBER GEN-VERB MEMBER-PARTY
+;   caught 3 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN ENG-RELATION
+;     (ENG-RELATION-GROUP RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-RELATION-GROUP
+
+;     (ENG-RELATION2 SUBJECT RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-RELATION2
+; 
+; compilation unit finished
+;   Undefined functions:
+;     ENG-RELATION-GROUP ENG-RELATION2
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN ENG-RELATION2
+;     (RELATION-SIDE RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-SIDE
+; 
+; compilation unit finished
+;   Undefined function:
+;     RELATION-SIDE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN ENG-RELATION-GROUP
+;     (<IMPORTANT? 'C (RELATION-IMPORTANCE RELATION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::<IMPORTANT?
+
+;     (ENGLISH-GROUP-PHRASE GRP SIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-GROUP-PHRASE
+
+;     (ENGLISH-SHORT GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENGLISH-SHORT
+
+;     (GROUP-CON-ENGLISH GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-CON-ENGLISH
+
+;     (GROUP-PRO-ENGLISH GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-PRO-ENGLISH
+
+;     (RELATION-IMPORTANCE RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-IMPORTANCE
+
+;     (RELATION-SIDE RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-SIDE
+
+;     (REVEAL-GROUP RELATION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-GROUP
+
+;     (SARCASM?)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SARCASM?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     <IMPORTANT? ENGLISH-GROUP-PHRASE ENGLISH-SHORT GROUP-CON-ENGLISH GROUP-PRO-ENGLISH RELATION-IMPORTANCE RELATION-SIDE REVEAL-GROUP SARCASM?
+;   caught 9 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN ENG-TEST-GROUP
+;     (GET-NODE 'ACLU GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (GROUP-NORM GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-NORM
+
+;     (GROUP-P GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-P
+
+;     (INIT-RELATION (LIST GRP SIDE IMP (GET-NODE 'ACLU GROUP) 'GROUP))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-RELATION
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE GROUP-NORM GROUP-P INIT-RELATION
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN SAY-CLUSTER-RELATIONS
+;     (MEMBER-RELATIONS SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMBER-RELATIONS
+
+;     (SAY-GROUP-CLUSTERS SUBJ CLUSTER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAY-GROUP-CLUSTERS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     MEMBER-RELATIONS SAY-GROUP-CLUSTERS
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/rels.lisp
+; in: DEFUN SAY-GROUP-CLUSTERS
+;     (ENG-RELATION-CLUSTERS RELATION-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ENG-RELATION-CLUSTERS
+; 
+; compilation unit finished
+;   Undefined function:
+;     ENG-RELATION-CLUSTERS
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/verbs.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/verbs.lisp
+; in: DEFUN GEN-VERB
+;     (CONJUGATE-VERB (LIST PERSON NUMBER 'GERUND) VERB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CONJUGATE-VERB
+; 
+; compilation unit finished
+;   Undefined function:
+;     CONJUGATE-VERB
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/verbs.lisp
+; in: DEFUN CONJUGATE-VERB
+;     (GEN-ASSOC PERSON-NUMBER-TENSE ALIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-ASSOC
+
+;     (GEN-VERB-ENDING
+;      (IF (OR (AND (EQ TENSE 'GERUND) E-ENDING) (AND (NOT #) Y-ENDING))
+;          NEW-VERB
+;          VERB)
+;      ENDING)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-VERB-ENDING
+
+;     (IRREGULAR-VERB-ALISTS VERB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::IRREGULAR-VERB-ALISTS
+
+;     (LASTCHAR VERB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::LASTCHAR
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GEN-ASSOC GEN-VERB-ENDING IRREGULAR-VERB-ALISTS LASTCHAR
+;   caught 4 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/combine.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/combine.lisp
+; in: DEFUN COMBINE-STANCES
+;     (SETF (STANCE-SIBLINGS ST) (COLLECT STANCE-LIST #'(LAMBDA (ST2) (AND # #))))
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-SIBLINGS)
+
+;     (STANCE-ALIKEV? ST ST2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-ALIKEV?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF STANCE-SIBLINGS) STANCE-ALIKEV?
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/combine.lisp
+; in: DEFUN CREATE-SIBLING-NP
+;     (GENERATE-SIBLING-PHRASE SIBS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GENERATE-SIBLING-PHRASE
+
+;     (STANCE-SIBLINGS STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIBLINGS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GENERATE-SIBLING-PHRASE STANCE-SIBLINGS
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/combine.lisp
+; in: DEFUN GENERATE-SIBLING-PHRASE
+;     (REVEAL-SOURCE (CAR SIBS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-SOURCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     REVEAL-SOURCE
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp
+; in: DEFUN ENGLISH-RATIONALE
+;     (DECISION-DOWNSIDE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE
+
+;     (DECISION-DOWNSIDE-RECORD DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE-RECORD
+
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+
+;     (DECISION-REASON DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-REASON
+
+;     (GEN-DOWNSIDE-INTRO DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-DOWNSIDE-INTRO
+
+;     (GEN-DOWNSIDE-RECORD-INTRO DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-DOWNSIDE-RECORD-INTRO
+
+;     (GEN-RECORD-NP (DECISION-MEMBER DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GEN-RECORD-NP
+
+;     (GROUP-REASONS (DECISION-DOWNSIDE-RECORD DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-REASONS
+
+;     (REVEAL-SOURCE REASON)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REVEAL-SOURCE
+
+;     (STANCE-SIBLINGS REASON)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIBLINGS
+
+;     (STANCE-SOURCE-DB REASON)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SOURCE-DB
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DECISION-DOWNSIDE DECISION-DOWNSIDE-RECORD DECISION-MEMBER DECISION-REASON GEN-DOWNSIDE-INTRO GEN-DOWNSIDE-RECORD-INTRO GEN-RECORD-NP GROUP-REASONS REVEAL-SOURCE STANCE-SIBLINGS STANCE-SOURCE-DB
+;   caught 11 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp
+; in: DEFUN GEN-DOWNSIDE-INTRO
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+; 
+; compilation unit finished
+;   Undefined function:
+;     DECISION-MEMBER
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp
+; in: DEFUN GEN-DOWNSIDE-RECORD-INTRO
+;     (DECISION-MEMBER DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-MEMBER
+; 
+; compilation unit finished
+;   Undefined function:
+;     DECISION-MEMBER
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp
+; in: DEFUN ENGLISH-RECORD-PRO
+;     (STANCE-IMPORTANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     STANCE-IMPORTANCE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/downside.lisp
+; in: DEFUN ENGLISH-RECORD-CON
+;     (STANCE-IMPORTANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     STANCE-IMPORTANCE
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp
+; in: DEFMETHOD INORDER? (VP T)
+;     (SORT-KEY SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SORT-KEY
+
+;     (VP-P OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::VP-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     SORT-KEY VP-P
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp
+; in: DEFMETHOD PRETTY-PRINT (VP T)
+;     (ALL-THE-SLOTS)
+; 
+; caught STYLE-WARNING:
+;   The function ALL-THE-SLOTS is called with zero arguments, but wants exactly one.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp
+; in: DEFMETHOD PRETTY-PRINT (VP T)
+;     (MY-PRETTY-PRINT VALUE STREAM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MY-PRETTY-PRINT
+; 
+; compilation unit finished
+;   Undefined function:
+;     MY-PRETTY-PRINT
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp
+; in: DEFMETHOD INPUT-PROTOTYPE (VP T)
+;     (PROMPTED-DEFINED-SYMBOL-INPUT "Side   (pro/con): " `(PRO CON))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-DEFINED-SYMBOL-INPUT
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROMPTED-DEFINED-SYMBOL-INPUT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/vp.lisp
+; in: DEFMETHOD UPDATE-PROTOTYPE (VP T)
+;     (PROMPTED-DEFINED-SYMBOL-INPUT "Side   (pro/con): " `(PRO CON))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-DEFINED-SYMBOL-INPUT
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROMPTED-DEFINED-SYMBOL-INPUT
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN GEN-TEST
+;     (GET-NODE ISS ISSUE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (INIT-STANCE (LIST ISS-ID SIDE IMPORTANCE SOURCE-ID DB))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-STANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE INIT-STANCE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN GEN-RECORD-TEST
+;     (GET-NODE ISS ISSUE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (INIT-STANCE (LIST ISS-ID SIDE IMPORTANCE SOURCE-ID BILL))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-STANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE INIT-STANCE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN GEN-TEST-NP
+;     (GET-NODE ITEM DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-NODE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN GEN-TEST-NO-CLUSTER
+;     (COERCE-SUBJ SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COERCE-SUBJ
+; 
+; compilation unit finished
+;   Undefined function:
+;     COERCE-SUBJ
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN GEN-TEST-CLUSTER
+;     (COERCE-SUBJ SUBJ)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COERCE-SUBJ
+; 
+; compilation unit finished
+;   Undefined function:
+;     COERCE-SUBJ
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/test.lisp
+; in: DEFUN COERCE-SUBJ
+;     (GET-NODE ITEM DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (ISSUE-P REALITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISSUE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE ISSUE-P
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/gen/explain.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/explain.lisp
+; in: DEFUN EXPLAIN-TO-AUDIENCE
+;     (SETF (DECISION-DOWNSIDE NEW-DEC) (GROUP-REASONS (COLLECT DOWNSIDE PROC)))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-DOWNSIDE)
+
+;     (SETF (DECISION-DOWNSIDE-RECORD NEW-DEC) (COLLECT DOWN-REC PROC))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-DOWNSIDE-RECORD)
+
+;     (SETF (DECISION-REASON NEW-DEC) (GROUP-REASONS (COLLECT REASONS PROC)))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-REASON)
+
+;     (DECISION-DOWNSIDE NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE
+
+;     (DECISION-DOWNSIDE-RECORD NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE-RECORD
+
+;     (DECISION-REASON NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-REASON
+
+;     (GET-NODE GROUP-ID GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (GROUP-REASONS (COLLECT REASONS PROC))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-REASONS
+
+;     (GROUP-STANCES GRP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-STANCES
+
+;     #'STANCE-ALIKEV?
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-ALIKEV?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF DECISION-DOWNSIDE) (SETF DECISION-DOWNSIDE-RECORD) (SETF DECISION-REASON) DECISION-DOWNSIDE DECISION-DOWNSIDE-RECORD DECISION-REASON GET-NODE GROUP-REASONS GROUP-STANCES STANCE-ALIKEV?
+;   caught 10 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/gen/explain.lisp
+; in: DEFUN SARCASTIC-EXPLANATION
+;     (SETF (DECISION-DOWNSIDE NEW-DEC) (GROUP-REASONS (MAPCAR #'PROC DOWNSIDE)))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-DOWNSIDE)
+
+;     (SETF (DECISION-DOWNSIDE-RECORD NEW-DEC) (MAPCAR #'PROC DOWN-REC))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-DOWNSIDE-RECORD)
+
+;     (SETF (DECISION-REASON NEW-DEC) (GROUP-REASONS (MAPCAR #'PROC REASONS)))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::DECISION-REASON)
+
+;     (SETF (SARCASM?) T)
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::SARCASM?)
+
+;     (SETF (STANCE-SIDE ST) (FLIP-SIDE SIDE))
+; --> FUNCALL 
+; ==>
+;   1
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-SIDE)
+
+;     (DECISION-DOWNSIDE NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE
+
+;     (DECISION-DOWNSIDE-RECORD NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-DOWNSIDE-RECORD
+
+;     (DECISION-REASON NEW-DEC)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-REASON
+
+;     (FLIP-SIDE SIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FLIP-SIDE
+
+;     (GROUP-REASONS (MAPCAR #'PROC REASONS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-REASONS
+
+;     (STANCE-P ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+
+;     (STANCE-SIDE ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF DECISION-DOWNSIDE) (SETF DECISION-DOWNSIDE-RECORD) (SETF DECISION-REASON) (SETF SARCASM?) (SETF STANCE-SIDE) DECISION-DOWNSIDE DECISION-DOWNSIDE-RECORD DECISION-REASON FLIP-SIDE GROUP-REASONS STANCE-P STANCE-SIDE
+;   caught 12 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/specials_pol.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/utils.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/utils.lisp
+; in: DEFUN TYPE-CHECK+FIX
+;     (RETURN-FIRST DBASE #'(LAMBDA (DB) (SYMBOL->STRUCTURE ARG DB)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RETURN-FIRST
+
+;     (SYMBOL->STRUCTURE ARG DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SYMBOL->STRUCTURE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RETURN-FIRST SYMBOL->STRUCTURE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/utils.lisp
+; in: DEFUN SYMBOL->STRUCTURE
+;     (GET-NODE ARG DBASE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-NODE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/utils.lisp
+; in: DEFUN STRING-REVERSE
+;     (STRING-REVERSE2 TEXT 'NIL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRING-REVERSE2
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRING-REVERSE2
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/isa.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/isa.lisp
+; in: DEFUN GET-ISA
+;     (GET-NODE (CAR ISA-LIST) DB)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE
+
+;     (ISA NODE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::ISA
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-NODE ISA
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/isa.lisp
+; in: DEFUN GET-NODE
+;     (GET-NODE-FROM-LIST (GETHASH NAME TABLE) NAME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NODE-FROM-LIST
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-NODE-FROM-LIST
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/sort.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/sort.lisp
+; in: DEFUN SORT_COMMAND
+;     (CREATE-SORT-KEY-PROC *CURRENT-DB* (CAR ARGS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CREATE-SORT-KEY-PROC
+
+;     (INVERT-INSTANCES NODE *CURRENT-DB*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INVERT-INSTANCES
+
+;     (MAPC #'SET-ALPHA-SORT (DB-ALL *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-ALPHA-SORT
+
+;     (MAPC #'SET-DATE-SORT (DB-ALL *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-DATE-SORT
+
+;     (MAPC #'SET-ISA-SORT (DB-ALL *CURRENT-DB*))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-ISA-SORT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CREATE-SORT-KEY-PROC INVERT-INSTANCES SET-ALPHA-SORT SET-DATE-SORT SET-ISA-SORT
+;   caught 5 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/mypp.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/operations.lisp"
+WARNING: redefining COMMON-LISP-USER::SYNONYMS in DEFGENERIC
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/remove.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/remove.lisp
+; in: DEFUN STANCE-EQUAL?
+;     (STANCE-ALIKEV? S1 S2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-ALIKEV?
+
+;     (STANCE-IMPORTANCE S1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     STANCE-ALIKEV? STANCE-IMPORTANCE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/remove.lisp
+; in: DEFUN STANCE-ALIKEV?
+;     (STANCE-P S1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+
+;     (STANCE-SIDE S1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     STANCE-P STANCE-SIDE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/remove.lisp
+; in: DEFUN RELATION-ALIKEV?
+;     (RELATION-P R1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-P
+
+;     (RELATION-SIDE R1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-SIDE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RELATION-P RELATION-SIDE
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/group.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/group.lisp
+; in: DEFMETHOD INORDER? (GROUP GROUP)
+;     (GROUP? OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP?
+; 
+; compilation unit finished
+;   Undefined function:
+;     GROUP?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/group.lisp
+; in: DEFMETHOD UPDATE-PROTOTYPE (GROUP T)
+;     (INPUT-RELATION (ID SELF) 'GROUP (CAR (SYNONYMS SELF)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INPUT-RELATION
+
+;     (PROMPTED-STANCE-LIST-INPUT "Stances: " (CAR (SYNONYMS SELF)) 'GROUP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-STANCE-LIST-INPUT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INPUT-RELATION PROMPTED-STANCE-LIST-INPUT
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/group.lisp
+; in: DEFUN GFIXIT
+;     (SETF (STANCE-SOURCE S) NAME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-SOURCE)
+; 
+; compilation unit finished
+;   Undefined function:
+;     (SETF STANCE-SOURCE)
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/issue.fasl"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/bill.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/bill.lisp
+; in: DEFMETHOD INORDER? (BILL BILL)
+;     (BILL? OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::BILL?
+
+;     (DATE? FIRST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     BILL? DATE?
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/bill.lisp
+; in: DEFMETHOD PRINT-HC (BILL T)
+;     (DATE? DATE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DATE?
+; 
+; compilation unit finished
+;   Undefined function:
+;     DATE?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/bill.lisp
+; in: DEFMETHOD UPDATE-PROTOTYPE (BILL T)
+;     (INFER-BILL-STANCES SELF 'FOR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INFER-BILL-STANCES
+
+;     (PROMPTED-STANCE-LIST-INPUT "Stances FOR this bill: " (BILL-BNUMBER SELF)
+;      'BILL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-STANCE-LIST-INPUT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INFER-BILL-STANCES PROMPTED-STANCE-LIST-INPUT
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFMETHOD INORDER? (MEMBER MEMBER)
+;     (MEMBER? OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMBER?
+; 
+; compilation unit finished
+;   Undefined function:
+;     MEMBER?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFMETHOD INPUT-PROTOTYPE (MEMBER T)
+;     (PROMPTED-VOTE-INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-VOTE-INPUT
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROMPTED-VOTE-INPUT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFMETHOD UPDATE-PROTOTYPE (MEMBER T)
+;     (EXTRACT-VOTING-STANCES SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EXTRACT-VOTING-STANCES
+
+;     (GET-RELATIONS-STANCES SELF 'PRO)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-RELATIONS-STANCES
+
+;     (PROMPTED-RELATION-LIST-INPUT "Relations: " (ID SELF) 'MEMBER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-RELATION-LIST-INPUT
+
+;     (PROMPTED-STANCE-LIST-INPUT "Credo stances: " (ID SELF) 'MEMBER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-STANCE-LIST-INPUT
+
+;     (PROMPTED-VOTE-INPUT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROMPTED-VOTE-INPUT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EXTRACT-VOTING-STANCES GET-RELATIONS-STANCES PROMPTED-RELATION-LIST-INPUT PROMPTED-STANCE-LIST-INPUT PROMPTED-VOTE-INPUT
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFUN EXTRACT-VOTING-STANCES
+;     #'EXTRACT-VOTE-STANCES
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EXTRACT-VOTE-STANCES
+; 
+; compilation unit finished
+;   Undefined function:
+;     EXTRACT-VOTE-STANCES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFUN FIXIT
+;     (SETF (STANCE-SOURCE S) NUM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-SOURCE)
+; 
+; compilation unit finished
+;   Undefined function:
+;     (SETF STANCE-SOURCE)
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/member.lisp
+; in: DEFUN GET-RELATIONS-STANCES
+;     (SETF (STANCE-RELATION STANCE) REL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: (COMMON-LISP:SETF COMMON-LISP-USER::STANCE-RELATION)
+
+;     (RELATION-GROUP REL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-GROUP
+
+;     (RELATION-SIDE (STANCE-RELATION STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-SIDE
+
+;     (STANCE-RELATION STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-RELATION
+; 
+; compilation unit finished
+;   Undefined functions:
+;     (SETF STANCE-RELATION) RELATION-GROUP RELATION-SIDE STANCE-RELATION
+;   caught 4 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/strategy.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strategy.lisp
+; in: DEFMETHOD INORDER? (STRATEGY STRATEGY)
+;     (STRATEGY? OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRATEGY?
+; 
+; compilation unit finished
+;   Undefined function:
+;     STRATEGY?
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/stance.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/stance.lisp
+; in: DEFMETHOD SET-SORT-KEY (STANCE T)
+;     (RELATION-IMPORTANCE (STANCE-RELATION SELF))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-IMPORTANCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     RELATION-IMPORTANCE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/stance.lisp
+; in: DEFUN INIT-STANCE
+;     (CHECK-ARG #'ISA-SIDE? SIDE 'INIT-STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-ARG
+; 
+; compilation unit finished
+;   Undefined function:
+;     CHECK-ARG
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/stance.lisp
+; in: DEFUN INPUT-STANCE
+;     (VERIFY-PROMPTED-SYMBOL-INPUT "Side   (pro/con): " '(PRO CON))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::VERIFY-PROMPTED-SYMBOL-INPUT
+; 
+; compilation unit finished
+;   Undefined function:
+;     VERIFY-PROMPTED-SYMBOL-INPUT
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/relation.fasl"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFMETHOD INORDER? (DECISION DECISION)
+;     (DECISION-P OTHER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DECISION-P
+; 
+; compilation unit finished
+;   Undefined function:
+;     DECISION-P
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFMETHOD UPDATE-PROTOTYPE (DECISION T)
+;     (UPDATE-DECISION-METRICS SELF)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-DECISION-METRICS
+; 
+; compilation unit finished
+;   Undefined function:
+;     UPDATE-DECISION-METRICS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN UPDATE-DECISION-METRICS
+;     (CHECK-NORMS (BILL-STANCE-FOR BILLID))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-NORMS
+
+;     (COLLECT-BILLS FORS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-BILLS
+
+;     (COLLECT-CREDO FORS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-CREDO
+
+;     (COLLECT-GROUPS FORS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-GROUPS
+
+;     (UPDATE-MI-STANCES DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-MI-STANCES
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CHECK-NORMS COLLECT-BILLS COLLECT-CREDO COLLECT-GROUPS UPDATE-MI-STANCES
+;   caught 5 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN COLLECT-GROUPS
+;     (COLLECT-SOURCE-TYPE 'GROUP STANCES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-SOURCE-TYPE
+; 
+; compilation unit finished
+;   Undefined function:
+;     COLLECT-SOURCE-TYPE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN COLLECT-CREDO
+;     (COLLECT-SOURCE-TYPE 'MEMBER STANCES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-SOURCE-TYPE
+; 
+; compilation unit finished
+;   Undefined function:
+;     COLLECT-SOURCE-TYPE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN COLLECT-BILLS
+;     (COLLECT-SOURCE-TYPE 'BILL STANCES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-SOURCE-TYPE
+; 
+; compilation unit finished
+;   Undefined function:
+;     COLLECT-SOURCE-TYPE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN UPDATE-MI-STANCES
+;     (COMPARE-STANCES (DECISION-FOR-NORMS DECISION) (DECISION-AGN-NORMS DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMPARE-STANCES
+
+;     (MI-STANCE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MI-STANCE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     COMPARE-STANCES MI-STANCE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN MI-STANCE
+;     (COMPARE-STANCES FORS AGNS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMPARE-STANCES
+; 
+; compilation unit finished
+;   Undefined function:
+;     COMPARE-STANCES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN COMPARE-STANCES
+;     (REMOVE-LESS-IMPORTANT AGNS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REMOVE-LESS-IMPORTANT
+; 
+; compilation unit finished
+;   Undefined function:
+;     REMOVE-LESS-IMPORTANT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/decision.lisp
+; in: DEFUN CHECK-NORMS
+;     (MAPCAR #'NORMATIVE-STANCE? STANCES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NORMATIVE-STANCE?
+; 
+; compilation unit finished
+;   Undefined function:
+;     NORMATIVE-STANCE?
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN VOTE
+;     (OLD-LINE-LENGTH (LINE-LENGTH *STANDARD-OUTPUT*))
+; 
+; caught STYLE-WARNING:
+;   The variable OLD-LINE-LENGTH is defined but never used.
+
+;     (EXAMPLE-LINE-LENGTH 68)
+; 
+; caught STYLE-WARNING:
+;   The variable EXAMPLE-LINE-LENGTH is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN VOTE
+;     (APPLY-DECISION-STRATEGIES DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::APPLY-DECISION-STRATEGIES
+
+;     (COMPARE-WITH-REAL-VOTE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COMPARE-WITH-REAL-VOTE
+
+;     (INITIALIZE-DECISION DECISION MEMBER-ID BILL-ID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INITIALIZE-DECISION
+
+;     (UPDATE-DECISION-DBASE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-DECISION-DBASE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     APPLY-DECISION-STRATEGIES COMPARE-WITH-REAL-VOTE INITIALIZE-DECISION UPDATE-DECISION-DBASE
+;   caught 6 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN INITIALIZE-DECISION
+;     (INFER-REL-STANCES DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INFER-REL-STANCES
+
+;     (MATCH-STANCES-FOR/AGN DECISION 'FOR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MATCH-STANCES-FOR/AGN
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INFER-REL-STANCES MATCH-STANCES-FOR/AGN
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN INFER-REL-STANCES
+;     (INFER-MEMBER-REL-STANCES MEM-ID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INFER-MEMBER-REL-STANCES
+; 
+; compilation unit finished
+;   Undefined function:
+;     INFER-MEMBER-REL-STANCES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN MATCH-STANCES-FOR/AGN
+;     (MATCH-STANCES STANCE (DECISION-MEMBER DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MATCH-STANCES
+
+;     (REMOVE-OLD-VOTES STANCES (ID (DECISION-BILL DECISION)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REMOVE-OLD-VOTES
+; 
+; compilation unit finished
+;   Undefined functions:
+;     MATCH-STANCES REMOVE-OLD-VOTES
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN APPLY-DECISION-STRATEGIES
+;     (APPLY-STRATS DECISION STRATS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::APPLY-STRATS
+; 
+; compilation unit finished
+;   Undefined function:
+;     APPLY-STRATS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN APPLY-STRATS
+;     (GROUP-REASONS (DECISION-REASON DECISION))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GROUP-REASONS
+; 
+; compilation unit finished
+;   Undefined function:
+;     GROUP-REASONS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/cg.lisp
+; in: DEFUN VOTE-ALL
+;     (RUN-TIME
+;      (LET* ((OPTIONS (CAR OPTS)) (BILLIDS (COND # #)) (MEMIDS (COND # #)))
+;        (MAPC
+;         #'(LAMBDA (BILLID)
+;             (IF #
+;                 #)
+;             (MAPC #'# MEMIDS))
+;         BILLIDS)))
+; --> PROG1 LET PROGN SETF SETQ THE 
+; ==>
+;   (CURRENT_TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CURRENT_TIME
+
+; --> PROG1 LET PROGN 
+; ==>
+;   (TIME-STAMP *STANDARD-OUTPUT*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-STAMP
+
+; --> PROG1 LET PROGN FORMAT ->HMS-NEW 
+; ==>
+;   (TIME-SUBTRACT FINISH START)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-SUBTRACT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CURRENT_TIME TIME-STAMP TIME-SUBTRACT
+;   caught 3 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-INCONSISTENT-CONSTITUENCY
+;     (CONSENSUS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CONSENSUS
+; 
+; compilation unit finished
+;   Undefined function:
+;     CONSENSUS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN CONSENSUS
+;     (COLLECT-MI DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COLLECT-MI
+; 
+; compilation unit finished
+;   Undefined function:
+;     COLLECT-MI
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-COULD-NOT-PASS
+;     (COULD-NOT-PASS? BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::COULD-NOT-PASS?
+; 
+; compilation unit finished
+;   Undefined function:
+;     COULD-NOT-PASS?
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN MIGHT-PASS?
+;     (APPROVED? BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::APPROVED?
+
+;     (VOTE-RATIO BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::VOTE-RATIO
+; 
+; compilation unit finished
+;   Undefined functions:
+;     APPROVED? VOTE-RATIO
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN COULD-NOT-PASS?
+;     (VOTE-RATIO BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::VOTE-RATIO
+; 
+; compilation unit finished
+;   Undefined function:
+;     VOTE-RATIO
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-MINIMIZE-ADVERSE-EFFECTS
+;     (GET-MI-LEVEL DECISION (OPPOSITE-RESULT RESULT))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-MI-LEVEL
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-MI-LEVEL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-NOT-GOOD-ENOUGH
+;     (GET-MI-BILL-LEVEL DECISION RESULT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-MI-BILL-LEVEL
+; 
+; compilation unit finished
+;   Undefined function:
+;     GET-MI-BILL-LEVEL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-PARTISAN
+;     (GET-MI-CON-REL-LEVEL DECISION (OPPOSITE-RESULT RESULT))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-MI-CON-REL-LEVEL
+
+;     (UPDATE-CON-REL-STANCES DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::UPDATE-CON-REL-STANCES
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-MI-CON-REL-LEVEL UPDATE-CON-REL-STANCES
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN UPDATE-CON-REL-STANCES
+;     (MATCH-CON-REL-STANCES-FOR/AGN DECISION 'FOR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MATCH-CON-REL-STANCES-FOR/AGN
+; 
+; compilation unit finished
+;   Undefined function:
+;     MATCH-CON-REL-STANCES-FOR/AGN
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-SHIFTING-ALLIANCES
+;     (DIVIDED-GROUPS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DIVIDED-GROUPS
+; 
+; compilation unit finished
+;   Undefined function:
+;     DIVIDED-GROUPS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-DEEPER-ANALYSIS
+;     (NEW-ANALYSIS-LEVEL DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NEW-ANALYSIS-LEVEL
+
+;     (REANALYZE-DECISION DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REANALYZE-DECISION
+
+;     (STRAT-DEEPER-ANALYSIS2 DECISION STRAT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STRAT-DEEPER-ANALYSIS2
+; 
+; compilation unit finished
+;   Undefined functions:
+;     NEW-ANALYSIS-LEVEL REANALYZE-DECISION STRAT-DEEPER-ANALYSIS2
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN STRAT-DEEPER-ANALYSIS2
+;     (EXPAND-STANCES OLD-BILL-AGN-STANCES LEVEL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EXPAND-STANCES
+
+;     (NEW-ANALYSIS-LEVEL DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NEW-ANALYSIS-LEVEL
+
+;     (PRINT-NEW-STANCES NEW-BILL-FOR-STANCES OLD-BILL-FOR-STANCES 'FOR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-NEW-STANCES
+
+;     (REANALYZE-DECISION DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::REANALYZE-DECISION
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EXPAND-STANCES NEW-ANALYSIS-LEVEL PRINT-NEW-STANCES REANALYZE-DECISION
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN NEW-ANALYSIS-LEVEL
+;     (NEXT-ANALYSIS-LEVEL OLD-LEVEL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NEXT-ANALYSIS-LEVEL
+; 
+; compilation unit finished
+;   Undefined function:
+;     NEXT-ANALYSIS-LEVEL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN EXPAND-STANCES
+;     (EXPAND-ONE-STANCE ST LEVEL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EXPAND-ONE-STANCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     EXPAND-ONE-STANCE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/strats.lisp
+; in: DEFUN EXPAND-STANCE-LIST
+;     (EXPAND-ONE-STANCE (CAR STANCES) LEVEL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::EXPAND-ONE-STANCE
+
+;     (SET-FILTER ST-LIST RESULT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-FILTER
+; 
+; compilation unit finished
+;   Undefined functions:
+;     EXPAND-ONE-STANCE SET-FILTER
+;   caught 2 STYLE-WARNING conditions
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/party-strat.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN DIVIDED-GROUPS
+;     (RESOLVE-CREDO-CONFLICTS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RESOLVE-CREDO-CONFLICTS
+
+;     #'STANCE-RELATION-ALIKEV?
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-RELATION-ALIKEV?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RESOLVE-CREDO-CONFLICTS STANCE-RELATION-ALIKEV?
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN EQUAL-STANCE-REL-IMPORT?
+;     (STANCE-REL-IMPORT ST1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-REL-IMPORT
+; 
+; compilation unit finished
+;   Undefined function:
+;     STANCE-REL-IMPORT
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN STANCE-REL-IMPORT
+;     (RELATION-P (STANCE-RELATION STANCE))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RELATION-P
+
+;     (STANCE-P STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     RELATION-P STANCE-P
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN STANCE-RELATION-ALIKEV?
+;     (STANCE-P ST1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined function:
+;     STANCE-P
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN RESOLVE-CREDO-CONFLICTS
+;     (FIND-CREDO-CONFLICTS BELIEFS AGNS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-CREDO-CONFLICTS
+; 
+; compilation unit finished
+;   Undefined function:
+;     FIND-CREDO-CONFLICTS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN FIND-CREDO-CONFLICTS
+;     (FIND-CREDO-STANCE-CONFLICTS ST BELIEFS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-CREDO-STANCE-CONFLICTS
+; 
+; compilation unit finished
+;   Undefined function:
+;     FIND-CREDO-STANCE-CONFLICTS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN FIND-CREDO-STANCE-CONFLICTS
+;     (FIND-STANCE-CONFLICTS BELIEFS (GROUP-STANCES (GET-NODE GRP GROUP)))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-STANCE-CONFLICTS
+
+;     (STANCE-P ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined functions:
+;     FIND-STANCE-CONFLICTS STANCE-P
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN FIND-STANCE-CONFLICTS
+;     (FIND-INTERSECTION ST1 ST2 #'STANCE-OPPOSITE?)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-INTERSECTION
+
+;     #'STANCE-OPPOSITE?
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-OPPOSITE?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     FIND-INTERSECTION STANCE-OPPOSITE?
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/shift.lisp
+; in: DEFUN STANCE-OPPOSITE?
+;     (STANCE-P S1)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::STANCE-P
+; 
+; compilation unit finished
+;   Undefined function:
+;     STANCE-P
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-NOT-CONSTITUTIONAL
+;     (PROTOCOL-SIMPLE-CONSENSUS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-CONSENSUS
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-CONSENSUS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-UNIMPORTANT-BILL
+;     (PROTOCOL-SIMPLE-CONSENSUS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-CONSENSUS
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-CONSENSUS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-INCONSISTENT-CONSTITUENCY
+;     (PROTOCOL-SIMPLE-CONSENSUS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-CONSENSUS
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-CONSENSUS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-BALANCE-THE-BOOKS
+;     (PROTOCOL-SIMPLE-MAJORITY DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-MAJORITY
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-MAJORITY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-BEST-FOR-THE-COUNTRY
+;     (PROTOCOL-SIMPLE-CONSENSUS DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-CONSENSUS
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-CONSENSUS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-MINIMIZE-ADVERSE-EFFECTS
+;     (PROTOCOL-SIMPLE-MAJORITY DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-MAJORITY
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-MAJORITY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-NOT-GOOD-ENOUGH
+;     (PROTOCOL-SIMPLE-MAJORITY DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-MAJORITY
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-MAJORITY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-PARTISAN
+;     (PROTOCOL-SIMPLE-MAJORITY DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROTOCOL-SIMPLE-MAJORITY
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROTOCOL-SIMPLE-MAJORITY
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/protocol.lisp
+; in: DEFUN PROTOCOL-SIMPLE-MAJORITY
+;     (PRINT-MAJORITY-STANCES DECISION RESULT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-MAJORITY-STANCES
+; 
+; compilation unit finished
+;   Undefined function:
+;     PRINT-MAJORITY-STANCES
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/mem_anal.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/mem_anal.lisp
+; in: DEFUN MDIFF
+;     (PRINT-DIFFS V1 V2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-DIFFS
+; 
+; compilation unit finished
+;   Undefined function:
+;     PRINT-DIFFS
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/mem_anal.lisp
+; in: DEFUN PRINT-DIFFS
+;     (DIFF-MATCH L1 L2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DIFF-MATCH
+
+;     (PRINT-MISSING '2ND ITEM)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-MISSING
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DIFF-MATCH PRINT-MISSING
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/mem_anal.lisp
+; in: DEFUN DIFF-MATCH
+;     (DIFF-MATCH? ITEM1 ITEM2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DIFF-MATCH?
+
+;     (PARTIAL-MATCH? ITEM1 ITEM2)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PARTIAL-MATCH?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     DIFF-MATCH? PARTIAL-MATCH?
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/mem_anal.lisp
+; in: DEFUN CONSISTENT?
+;     (FILTER-STANCES (MSORT STANCES) 0)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FILTER-STANCES
+; 
+; compilation unit finished
+;   Undefined function:
+;     FILTER-STANCES
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN ANALYZE-DECISIONS
+;     (INDENT 11)
+; 
+; caught STYLE-WARNING:
+;   The variable INDENT is defined but never used.
+
+;     (TABBING 3)
+; 
+; caught STYLE-WARNING:
+;   The variable TABBING is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN ANALYZE-DECISIONS
+;     (GET+1 BILLID STRAT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET+1
+
+;     (PRINT-RESULTS DEEP?)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-RESULTS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET+1 PRINT-RESULTS
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN PRINT-RESULTS
+;     (OPTIONS DEEP?)
+; 
+; caught STYLE-WARNING:
+;   The variable OPTIONS is defined but never used.
+
+;     (DECISIONS (DB-ALL DECISION))
+; 
+; caught STYLE-WARNING:
+;   The variable DECISIONS is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN PRINT-RESULTS
+;     (PRINT-ONE-LINE "Bill/Strategy." STRAT-LIST INDENT TABBING *STANDARD-OUTPUT*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-ONE-LINE
+; 
+; compilation unit finished
+;   Undefined function:
+;     PRINT-ONE-LINE
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN COMPARE-WITH-REAL-VOTE
+;     (SET-REAL-VOTE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-REAL-VOTE
+
+;     (SET-SCORE DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SET-SCORE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     SET-REAL-VOTE SET-SCORE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN SET-REAL-VOTE
+;     (FIND-REAL-VOTE NAMES VOTES)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FIND-REAL-VOTE
+; 
+; compilation unit finished
+;   Undefined function:
+;     FIND-REAL-VOTE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN TALLY-SCORES
+;     (PRINT-SCORES CORRECT-FOR CORRECT-AGN WRONG-FOR WRONG-AGN)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-SCORES
+; 
+; compilation unit finished
+;   Undefined function:
+;     PRINT-SCORES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/analyze.lisp
+; in: DEFUN PRINT-SCORES
+;     (PERCENTAGE CORRECT TOTAL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PERCENTAGE
+; 
+; compilation unit finished
+;   Undefined function:
+;     PERCENTAGE
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN ANALYZE-SCORES
+;     (LEVEL (DECISION-DEEPER-ANALYSIS DEC-ID))
+; 
+; caught STYLE-WARNING:
+;   The variable LEVEL is defined but never used.
+
+;     (MEMIDS
+;      (MAPCAR #'ID (COND ((AND OPTIONS #) (LIST #)) (ELSE (DB-ALL MEMBER)))))
+; 
+; caught STYLE-WARNING:
+;   The variable MEMIDS is defined but never used.
+
+;     (STRATS (MAPCAR #'ID (COLLECT (DB-ALL STRATEGY) #'STRATEGY-TEST-CODE)))
+; 
+; caught STYLE-WARNING:
+;   The variable STRATS is defined but never used.
+
+;     (STATS '(FOR+ AGN+ FOR- AGN-))
+; 
+; caught STYLE-WARNING:
+;   The variable STATS is defined but never used.
+
+;     (DEEP-LEVELS '(A B C D))
+; 
+; caught STYLE-WARNING:
+;   The variable DEEP-LEVELS is defined but never used.
+
+;     (BILLIDS (REMOVE-DUPLICATES (MAPCAR #'ID (COND (# #) (ELSE #)))))
+; 
+; caught STYLE-WARNING:
+;   The variable BILLIDS is defined but never used.
+
+;     (INDENT 11)
+; 
+; caught STYLE-WARNING:
+;   The variable INDENT is defined but never used.
+
+;     (TABBING 3)
+; 
+; caught STYLE-WARNING:
+;   The variable TABBING is defined but never used.
+
+;     (LEVEL (DECISION-DEEPER-ANALYSIS DEC-ID))
+; 
+; caught STYLE-WARNING:
+;   The variable LEVEL is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN ANALYZE-SCORES
+;     (GET+1 NODE STAT)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET+1
+
+;     (PRINT-SCORE-RESULTS OPTS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-SCORE-RESULTS
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET+1 PRINT-SCORE-RESULTS
+;   caught 11 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN PRINT-SCORE-RESULTS
+;     (DEEP-LEVELS '(A B C))
+; 
+; caught STYLE-WARNING:
+;   The variable DEEP-LEVELS is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN PRINT-SCORE-RESULTS
+;     (PRINT-AGGREGATE-SCORES BILLIDS INDENT TABBING)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-AGGREGATE-SCORES
+
+;     (PRINT-ONE-LINE-SCORES "Bill" TOP-STATS INDENT TABBING *STANDARD-OUTPUT*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-ONE-LINE-SCORES
+
+;     (RIGHT-WRONG (MAPCAR #'(LAMBDA (STAT) (GET BILLID STAT)) STATS))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::RIGHT-WRONG
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PRINT-AGGREGATE-SCORES PRINT-ONE-LINE-SCORES RIGHT-WRONG
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN RIGHT-WRONG
+;     (MAPCAR #'->NUMBER ARGS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::->NUMBER
+; 
+; compilation unit finished
+;   Undefined function:
+;     ->NUMBER
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN PRINT-AGGREGATE-SCORES
+;     (INIT-AGGREGATE-TOTAL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::INIT-AGGREGATE-TOTAL
+
+;     (PRINT-ONE-AGGREGATE-SCORE (ID (GET-NODE BILLID BILL)) INDENT TABBING)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-ONE-AGGREGATE-SCORE
+
+;     (SAFE+ RIGHT WRONG)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAFE+
+; 
+; compilation unit finished
+;   Undefined functions:
+;     INIT-AGGREGATE-TOTAL PRINT-ONE-AGGREGATE-SCORE SAFE+
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN PRINT-ONE-AGGREGATE-SCORE
+;     (GET-PREDICTED-OUTCOME BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-PREDICTED-OUTCOME
+
+;     (GET-REAL-OUTCOME BILLID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-REAL-OUTCOME
+; 
+; compilation unit finished
+;   Undefined functions:
+;     GET-PREDICTED-OUTCOME GET-REAL-OUTCOME
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/anal2.lisp
+; in: DEFUN GET-PREDICTED-OUTCOME
+;     (SAFE* FACTOR AGNS)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SAFE*
+; 
+; compilation unit finished
+;   Undefined function:
+;     SAFE*
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/anal3.lisp"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN PUSH-UPDATE
+;     (MEMQ SELECTOR (DECISION-DEPENDENCIES ITEM))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMQ
+; 
+; compilation unit finished
+;   Undefined function:
+;     MEMQ
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN PROCESS-DD-UPDATES
+;     (PRINT-DD-RESULTS DD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PRINT-DD-RESULTS
+
+;     (PROCESS-ONE-DD-UPDATE UPDATE DD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-ONE-DD-UPDATE
+; 
+; compilation unit finished
+;   Undefined functions:
+;     PRINT-DD-RESULTS PROCESS-ONE-DD-UPDATE
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN PROCESS-ONE-DD-UPDATE
+;     (CHECK-ONE-DECISION DECISION UPDATE DD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-ONE-DECISION
+; 
+; compilation unit finished
+;   Undefined function:
+;     CHECK-ONE-DECISION
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN CHECK-ONE-DECISION
+;     (CHECK-DECISION-DEEPER-ANALYSIS ITEM SLOT DECISION)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-DECISION-DEEPER-ANALYSIS
+
+;     (MEMQ ITEM
+;      (MAPCAR #'REVEAL-ISSUE
+;              (APPEND (BILL-STANCE-FOR (DECISION-BILL DECISION))
+;                      (BILL-STANCE-AGN (DECISION-BILL DECISION)))))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MEMQ
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CHECK-DECISION-DEEPER-ANALYSIS MEMQ
+;   caught 2 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN CHECK-DECISION-DEEPER-ANALYSIS
+;     (CHECK-DECISION-DEEPER-LEVEL TARGET STANCES NIL LEVEL)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CHECK-DECISION-DEEPER-LEVEL
+; 
+; compilation unit finished
+;   Undefined function:
+;     CHECK-DECISION-DEEPER-LEVEL
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN PROCESS-DD-DECISIONS
+;     (RUN-TIME (COND ((NULL DD) (SETF DD *DDD*)) (ELSE (SETF DD #)))
+;               (LET ((DECISIONS (DD-DECISIONS DD)))
+;                 (COND ((NULL DECISIONS) NIL)
+;                       (ELSE (MAPC #'# DECISIONS) (PUSH # #) (SETF #)
+;                        'END-OF-PROCESS-DD-DECISIONS))))
+; --> PROG1 LET PROGN SETF SETQ THE 
+; ==>
+;   (CURRENT_TIME)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::CURRENT_TIME
+
+;     (PROCESS-ONE-DD-DECISION DECISION DD)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-ONE-DD-DECISION
+
+;     (RUN-TIME (COND ((NULL DD) (SETF DD *DDD*)) (ELSE (SETF DD #)))
+;               (LET ((DECISIONS (DD-DECISIONS DD)))
+;                 (COND ((NULL DECISIONS) NIL)
+;                       (ELSE (MAPC #'# DECISIONS) (PUSH # #) (SETF #)
+;                        'END-OF-PROCESS-DD-DECISIONS))))
+; --> PROG1 LET PROGN 
+; ==>
+;   (TIME-STAMP *STANDARD-OUTPUT*)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-STAMP
+
+; --> PROG1 LET PROGN FORMAT ->HMS-NEW 
+; ==>
+;   (TIME-SUBTRACT FINISH START)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::TIME-SUBTRACT
+; 
+; compilation unit finished
+;   Undefined functions:
+;     CURRENT_TIME PROCESS-ONE-DD-DECISION TIME-STAMP TIME-SUBTRACT
+;   caught 4 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/dd.lisp
+; in: DEFUN PROCESS-ONE-DD-DECISION
+;     (SANITIZE-MEMBER MEMID)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::SANITIZE-MEMBER
+; 
+; compilation unit finished
+;   Undefined function:
+;     SANITIZE-MEMBER
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN MATCH-WITH-ISSUES
+;     (MATCH-ONE-WORD-WITH-ISSUES (CAR WORD-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::MATCH-ONE-WORD-WITH-ISSUES
+; 
+; compilation unit finished
+;   Undefined function:
+;     MATCH-ONE-WORD-WITH-ISSUES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN LIST-OF-STRINGS->LIST
+;     (PROCESS-PUNCTUATION STR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::PROCESS-PUNCTUATION
+; 
+; compilation unit finished
+;   Undefined function:
+;     PROCESS-PUNCTUATION
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN EXTRACT-BILL-ISSUES
+;     (DOUBLE-MATCH-WITH-ISSUES WORD-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DOUBLE-MATCH-WITH-ISSUES
+; 
+; compilation unit finished
+;   Undefined function:
+;     DOUBLE-MATCH-WITH-ISSUES
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN INFER-BILL-STANCES
+;     (MAPCAR #'FOR->AGN-STANCE STANCE-FOR)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FOR->AGN-STANCE
+
+;     (GET-NORMS-OR-NEW-STANCES ISS OPP)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::GET-NORMS-OR-NEW-STANCES
+
+;     (OPPOSING-ISSUE? WORD-LIST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::OPPOSING-ISSUE?
+; 
+; compilation unit finished
+;   Undefined functions:
+;     FOR->AGN-STANCE GET-NORMS-OR-NEW-STANCES OPPOSING-ISSUE?
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN GET-NORMS-OR-NEW-STANCES
+;     (FOR->AGN-STANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::FOR->AGN-STANCE
+; 
+; compilation unit finished
+;   Undefined function:
+;     FOR->AGN-STANCE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN OPPOSING-ISSUE?
+;     (GETHASH (CAR WORD-LIST) OPPOSITION-TABLE)
+; 
+; caught WARNING:
+;   undefined variable: COMMON-LISP-USER::OPPOSITION-TABLE
+; 
+; compilation unit finished
+;   Undefined variable:
+;     OPPOSITION-TABLE
+;   caught 1 WARNING condition
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/pol/parse.lisp
+; in: DEFUN DOUBLE-MATCH-WITH-ISSUES
+;     (DOUBLE-MATCH-WORDS (MATCH-ONE-WORD-WITH-ISSUES (CAR WORD-LIST))
+;      (CDR WORD-LIST))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::DOUBLE-MATCH-WORDS
+; 
+; compilation unit finished
+;   Undefined function:
+;     DOUBLE-MATCH-WORDS
+;   caught 1 STYLE-WARNING condition
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/pol/types.lisp"
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/load_vote.lisp
+; in: DEFUN INIT-POL
+;     (DEFUN INIT-POL (&REST ARG)
+;       (NEWLOAD-DBS (LIST GROUP BILL ISSUE MEMBER STRATEGY)))
+; 
+; caught STYLE-WARNING:
+;   The variable ARG is defined but never used.
+
+; file: /Users/gnn/Repos/Yale/VOTE/lisp/load_vote.lisp
+; in: DEFUN INIT-POL
+;     (NEWLOAD-DBS (LIST GROUP BILL ISSUE MEMBER STRATEGY))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::NEWLOAD-DBS
+; 
+; compilation unit finished
+;   Undefined function:
+;     NEWLOAD-DBS
+;   caught 2 STYLE-WARNING conditions
+WARNING: redefining COMMON-LISP-USER::DB-P in DEFUN
+WARNING: redefining COMMON-LISP-USER::DB? in DEFUN
+The code is loaded.  Use (init-pol) to load the databases.
+T
+CL-USER> (load "gen/japanese.lisp")
+; loading #P"/Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp"
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN JPN-STANCE
+;     (JPN-FLIP-STANCE STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JPN-FLIP-STANCE
+
+;     (JPN-STANCE-ISSUE ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JPN-STANCE-ISSUE
+
+;     (JPN-STANCE2 SUBJECT ST)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JPN-STANCE2
+; 
+; compilation unit finished
+;   Undefined functions:
+;     JPN-FLIP-STANCE JPN-STANCE-ISSUE JPN-STANCE2
+;   caught 3 STYLE-WARNING conditions
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN JPN-STANCE2
+;     (JAPANESE-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-CON
+
+;     (JAPANESE-ISSUE-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-ISSUE-CON
+
+;     (JAPANESE-ISSUE-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-ISSUE-PRO
+
+;     (JAPANESE-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-PRO
+
+;     (JAPANESE-RECORD-CON SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-RECORD-CON
+
+;     (JAPANESE-RECORD-PRO SUBJECT STANCE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-RECORD-PRO
+; 
+; compilation unit finished
+;   Undefined functions:
+;     JAPANESE-CON JAPANESE-ISSUE-CON JAPANESE-ISSUE-PRO JAPANESE-PRO JAPANESE-RECORD-CON JAPANESE-RECORD-PRO
+;   caught 6 STYLE-WARNING conditions
+WARNING:
+   redefining IS-ISSUE? (#<SB-PCL:SYSTEM-CLASS COMMON-LISP:T>) in DEFMETHOD
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN JPN-STANCE-ISSUE
+;     (JAPANESE-ISSUE-PHRASE ISS SIDE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JAPANESE-ISSUE-PHRASE
+; 
+; compilation unit finished
+;   Undefined function:
+;     JAPANESE-ISSUE-PHRASE
+;   caught 1 STYLE-WARNING condition
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN JAPANESE-ISSUE-PHRASE
+;     ((PRO) "の正当な懸念")
+; 
+; caught ERROR:
+;   illegal function call
+
+;     (DEFUN JAPANESE-ISSUE-PHRASE (ISS SIDE)
+;       (CASE (ISSUE-TYPE ISS)
+;         ((PRINCIPLE) (GEN-PICK-ONE NIL "信じること" "の原理"))
+;         ((RIGHT) "の権利")
+;         ((PROPOSAL) "の提案")
+;         ((POLICY) "の政策")
+;         ((GROUP) (CASE (# "の正当な懸念") (# "の特別な利益")))
+;         ((CAUSE) "の原因")
+;         ((PROGRAM) "のプログラム")
+;         ((NOMINATION) "の指名")
+;         ((PROBLEM) "の問題")
+;         ((FOREIGN) (GEN-PICK-ONE "アメリカの関与" "における我が国の役割" "私たちの国との関係"))
+;         ...))
+; 
+; caught STYLE-WARNING:
+;   The variable SIDE is defined but never used.
+; 
+; compilation unit finished
+;   caught 1 ERROR condition
+;   caught 1 STYLE-WARNING condition
+WARNING: redefining COMMON-LISP-USER::GET-IMPORTANCE in DEFUN
+WARNING: redefining COMMON-LISP-USER::GET-SIDE in DEFUN
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN JAPANESE-ISSUE-CON
+;     (FORMAT NIL "~A 問題にする")
+; 
+; caught WARNING:
+;   Too few arguments (0) to FORMAT "~A 問題にする": requires at least 1.
+;   See also:
+;     The ANSI Standard, Section 22.3.10.2
+; 
+; compilation unit finished
+;   caught 1 WARNING condition
+
+; file: /Volumes/Repos/Yale/VOTE/lisp/gen/japanese.lisp
+; in: DEFUN NORM-TEST
+;     (JPN-TEST-GROUP (GEN-PICK-ONE 'PRO 'CON) (GEN-PICK-ONE 'A 'B 'C) (LIST OBJ))
+; 
+; caught STYLE-WARNING:
+;   undefined function: COMMON-LISP-USER::JPN-TEST-GROUP
+; 
+; compilation unit finished
+;   Undefined function:
+;     JPN-TEST-GROUP
+;   caught 1 STYLE-WARNING condition
+WARNING: redefining COMMON-LISP-USER::NORM-TEST in DEFUN
+WARNING: redefining COMMON-LISP-USER::GEN-GROUP-STANCES in DEFUN
+WARNING: redefining COMMON-LISP-USER::SAY-REASONS in DEFUN
+WARNING: redefining COMMON-LISP-USER::SAY-P/C in DEFUN
+WARNING: redefining COMMON-LISP-USER::SAY-SIDE in DEFUN
+WARNING: redefining COMMON-LISP-USER::SAY-OPPOSITE in DEFUN
+T
+CL-USER> (init-pol)
+
+newload-dbsn
+; Reading data base from file: /Users/gnn/Repos/Yale/VOTE/lisp/db/data/group
+; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group.load"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group0"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group1"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group2"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group3"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/group4"
+
+; Reading data base from file: /Users/gnn/Repos/Yale/VOTE/lisp/db/data/bill
+; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/bill.load"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/bill0"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/bill1"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/bill2"
+
+; Reading data base from file: /Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue
+; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue.load"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue0"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue1"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue2"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue3"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue4"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue5"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/issue6"
+
+; Reading data base from file: /Users/gnn/Repos/Yale/VOTE/lisp/db/data/member
+; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/member.load"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/member0"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/member1"
+
+; Reading data base from file: /Users/gnn/Repos/Yale/VOTE/lisp/db/data/strategy
+; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/strategy.load"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/strategy"
+;; loading #P"/Users/gnn/Repos/Yale/VOTE/lisp/db/data/strategy1"
+(#{db (0) GROUP} #{db (1) BILL} #{db (2) ISSUE} #{db (3) MEMBER}
+ #{db (4) STRATEGY})
+CL-USER> (jpn-test 'pro 'b '(aids women abortion))
+("般市民 はs 強く賛成する AIDS." "アメリカ国民 はs に賛成 Women's Rights."
+ "典型的な国民 はs に賛成 Abortion.")
+CL-USER> issue
+#{db (2) ISSUE}
+CL-USER> headers
+; in: SWANK:PPRINT-EVAL-STRING-IN-FRAME "ispq"
+;     (LET ((SWANK::*SLDB-LEVEL* 1))
+;       SB-INT::ISPQ)
+; 
+; caught WARNING:
+;   undefined variable: SB-INT::ISPQ
+; 
+; compilation unit finished
+;   Undefined variable:
+;     SB-INT::ISPQ
+;   caught 1 WARNING condition
+; Evaluation aborted on #<UNBOUND-VARIABLE ISPQ {7007A681E3}>.
+CL-USER> (dbase issue)
+
+Initializing database system.
+....ISSUE> headers
+
+      0   AIDS                                    +B
+      1   Abortion                                +C
+      2   Acid Rain Control                       +C(ACID-RAIN-CONTROL)
+      3   Affirmative Action                      +C(AFFIRMATIVE-ACTION)
+      4   Africa                        FOREIGN     
+      5   Age Discrimination            PROBLEM   -C(AGE-DISCRIMINATION)
+      6   Agricultural subsidies                  -C(FARM AGRICULTURE)
+      7   Aid to Nicaraguan Contras                 (CONTRA-AID CONTRAS)
+      8   Air Pollution Control         POLICY    +C(CLEAN-AIR
+                                                     AIR-POLLUTION-CONTROL)
+      9   Aircraft Carriers                         (CARRIERS)
+      10  Angola                        FOREIGN     
+      11  Angola Rebels                 GROUP       (ANGOLA-REBELS)
+      12  Anti-Ballistic Missile Treaty           +C(ABM)
+      13  Anti-Semitism                           -B
+      14  Anti-trust reform                       +C(ANTI-TRUST-REFORM)
+      15  Apartheid                     PROBLEM   -B
+      16  Arab-Israeli Conflict                   +B(ARAB-ISRAELI-CONFLICT)
+      17  Armored Divisions                         (ARMORED-DIVISIONS TANKS)
+      18  Arms Control                            +B(ARMS-CONTROL)
+      19  B-1 Bomber                                (B-1 B1)
+      20  Balance of Power              PRINCIPLE +B(BALANCE-OF-POWER)
+      21  Balanced Budget                         +C(BALANCED-BUDGET)
+      22  Banking industry              GROUP       (BANKING)
+      23  Birth Control                 RIGHT     +C(BIRTH-CONTROL)
+      24  Bond Taxation                           -C(BOND-TAXATION)
+      25  Bork Appointment              NOMINATION   (BORK)
+      26  Budget Freeze                 PROPOSAL    (BUDGET-FREEZE FREEZE)
+      27  Business                      GROUP       (INDUSTRY)
+      28  Cabinet Level Veterans Department PROPOSAL +C(CABINET-VETERANS)
+      29  Campaign Finance Reform                 +C(CAMPAIGN-FINANCE)
+      30  Cancer research                         +B(CANCER)
+      31  Capital Punishment            PRINCIPLE +C(CAPITAL-PUNISHMENT
+                                                     DEATH-PENALTY)
+      32  Capital gains tax cut         ECONOMIC  +C(CAPITAL-GAINS-TAX-CUT)
+      33  Catastrophic Health Costs     PROGRAM   +C(CATASTROPHIC-HEALTH-COSTS)
+      34  Central America               FOREIGN     (CENTRAL-AMERICA)
+      35  Central American Peace Plan   FOREIGN   +C(CENTRAL-AMERICAN-PEACE-PLAN)
+      36  Chemical Weapons                        -C(CHEMICAL-WEAPONS)
+      37  Child Care                    PROPOSAL  +B(CHILDCARE DAYCARE
+                                                     CHILD-CARE)
+      38  Civil Liberties               PRINCIPLE   (CIVIL-LIBERTIES)
+      39  Civil Rights                  CAUSE     +C(CIVIL-RIGHTS)
+      40  Clinch River breeder reactor  PROPOSAL    (CLINCH-RIVER)
+      41  Cold War                      PROBLEM   -C(COLD-WAR)
+      42  Compassion                    PRINCIPLE +B(MERCY COMPASSION)
+      43  Constitution                  PRINCIPLE +B(CONSTITUTION
+                                                     BILL-OF-RIGHTS)
+      44  Constructive Engagement       POLICY      (CONSTRUCTIVE-ENGAGEMENT)
+      45  Consumer Protection           CAUSE     +C(CONSUMER)
+      46  Conventional Defense                    +C(CONVENTIONAL-DEFENSE)
+      47  Creationism                               
+      48  Cruise Missile                            (CRUISE)
+      49  Cut taxes                     ECONOMIC  +B(CUT-TAXES TAX-CUTS)
+      50  D-5 Missile                               (D5)
+      51  Defense Spending                        +C(DEFENSE MILITARY
+                                                     DEFENSE-SPENDING)
+      52  Deficit                                 -C(BUDGET-DEFICIT DEFICIT)
+      53  Democracy                     PRINCIPLE +B
+      54  Deregulation                  PRINCIPLE +C
+      55  Diplomatic efforts                      +C(DIPLOMACY
+                                                     DIPLOMATIC-EFFORTS)
+      56  Domestic Policy                           (DOMESTIC)
+      57  Drug Enforcement              POLICY    +B(DRUG-ENFORCEMENT DRUGS)
+      58  East-West Relationships       FOREIGN     (EAST-WEST)
+      59  Economic Policy                         +B(ECONOMIC ECONOMY)
+      60  Education Policy              POLICY      (EDUCATION)
+      61  El Salvador                   FOREIGN     (EL-SALVADOR)
+      62  Elderly                       GROUP     +B
+      63  Election Reform               REFORM    +C(ELECTION-REFORM)
+      64  Elections                     PRINCIPLE +B(ELECTION)
+      65  End of Hostilities            OPPORTUNITY +C(END-OF-HOSTILITIES
+                                                       CEASEFIRE)
+      66  Energy Conservation                     +C(ENERGY)
+      67  Environmental Protection                +C(ENVIRONMENT ECOLOGY
+                                                     CONSERVATION)
+      68  Equal Rights Amendment        PROPOSAL    (ERA)
+      69  Equality                      PRINCIPLE +B(EQUALITY EQUITY)
+      70  Euromissile Treaty                      +C(INF-TREATY)
+      71  Fair Trial                    PRINCIPLE +B(FAIR-TRIAL DUE-PROCESS)
+      72  Fairness                      PRINCIPLE +C
+      73  Family values                 SOCIAL    +C(FAMILY FAMILY-VALUES)
+      74  Federal programs              ISSUE       (FEDERAL-PROGRAMS)
+      75  Fiscal responsibility         PRINCIPLE +B(FISCAL-RESPONSIBILITY)
+      76  Flag Burning                  RIGHT     -C(FLAG-BURNING)
+      77  Food Stamps                             +C(FOOD-STAMPS)
+      78  Foreign Policy                          +B(FOREIGN)
+      79  Foreign Relations Organizations GROUP     (FOREIGN-ORG)
+      80  Free Enterprise               PRINCIPLE +C(FREE-ENTERPRISE CAPITALISM
+                                                     FREE-MARKET)
+      81  Free Trade                    PRINCIPLE   (FREE-TRADE)
+      82  Freedom                       PRINCIPLE +A(FREEDOM LIBERTY)
+      83  Freedom of Speech             RIGHT     +B(FREE-SPEECH)
+      84  Freedom of the Press          RIGHT     +C(FREEDOM-OF-THE-PRESS)
+      85  Full employment                         +B(JOBS EMPLOYMENT)
+      86  Future of the Country                   +B(FUTURE)
+      87  Gay Rights                              -C(GAY-RIGHTS)
+      88  Generic Issue                             (ISSUE ISSUES)
+      89  Government Spending                     -C(SPENDING)
+      90  Government waste control                +B(WASTE)
+      91  Gun Control                   CAUSE     +C(GUN-CONTROL)
+      92  Handicapped                   GROUP     +C
+      93  Hard work                     PRINCIPLE +B(HARD-WORK)
+      94  Health Care                   CAUSE     +B(HEALTH-CARE HEALTH)
+      95  Help wealthy citizens         ECONOMIC  -C(HELP-WEALTHY)
+      96  Homelessness                  GROUP     +C(HOMELESS HOMELESSNESS)
+      97  Honesty                       PRINCIPLE +B(HONESTY)
+      98  Housing                                 +C
+      99  Human Rights                  PRINCIPLE +C(HUMAN-RIGHTS)
+      100  Human values                 ISSUE     +A(HUMAN-VALUES VALUES VALUE
+                                                     SOCIAL-VALUE)
+      101  Humanitarianism              PRINCIPLE +B
+      102  Hunger                                 +B
+      103  Idealism                     PRINCIPLE +C
+      104  Immigration Reform           REFORM      (IMMIGRATION
+                                                     IMMIGRATION-REFORM)
+      105  Inflation reduction                    +B(INFLATION)
+      106  Integrity                    PRINCIPLE +B
+      107  Intelligence Operations                  (INTELLIGENCE)
+      108  Isolationism                 POLICY    -C
+      109  Israel                       FOREIGN   +C
+      110  Jewish Refusniks / Soviet Jews GROUP   +C(SOVIET-JEWS)
+      111  Job Protection               ECONOMIC  +C(JOB-PROTECTION)
+      112  Judicial Appointments                  +C(JUDGESHIP)
+      113  Justice                      PRINCIPLE +A
+      114  Labor Issues                 GROUP       (LABOR)
+      115  Latin America                FOREIGN     (LATIN-AMERICA)
+      116  Law and Order                PRINCIPLE +B(LAW-AND-ORDER
+                                                     LAW-ENFORCEMENT CRIME)
+      117  Legal Services               PROGRAM     (LEGAL-SERVICES)
+      118  Limited Judicial Review of Veterans Compensation Cases POLICY   (VETERANS-JUDICIAL-REVIEW)
+      119  MIAs                                   +C
+      120  MX Missiles                              (MX MX-MISSILE)
+      121  Manion Appointment           NOMINATION   (MANION)
+      122  Medicare and Medicaid                  +B(MEDICARE MEDICAID)
+      123  Mexico                       FOREIGN   +C
+      124  Middle East                            +B(MID-EAST MIDDLE-EAST)
+      125  Midgetman Missile                        (MIDGETMAN)
+      126  Military Procurement                   +C(MILITARY-PROCUREMENT)
+      127  Military Solution            POLICY    -C(MILITARY-SOLUTION)
+      128  Minimum wage                           +C(MINIMUM-WAGE)
+      129  National Security            PRINCIPLE +B(NATIONAL-SECURITY SECURITY)
+      130  National autonomy            PRINCIPLE +C(NATIONAL-AUTONOMY)
+      131  Nationalism                  PRINCIPLE +B
+      132  Nicaragua                    FOREIGN     
+      133  Non-involvement              POLICY    +C
+      134  North Atlantic Treaty Organization GROUP +C(NATO)
+      135  North-South Relationships              +C(THIRD-WORLD NORTH-SOUTH
+                                                     RICH-POOR)
+      136  Nuclear Freeze               PROPOSAL  +C(NUCLEAR-FREEZE)
+      137  Nuclear Test Ban                       +C(NUCLEAR-TEST-BAN)
+      138  Nuclear Weapons                        -C(NUCLEAR-WEAPON)
+      139  Occupational Safety and Health         +C(SAFETY OSHA)
+      140  Open Housing                 PRINCIPLE +C(OPEN-HOUSING)
+      141  Opposition to communism                +B(COMMUNISM)
+      142  POWs                         GROUP     +B
+      143  Palestinian Homeland                   +C(PALESTINIAN-HOMELAND)
+      144  Panama                       FOREIGN   +C
+      145  Patriotism                   PRINCIPLE +B
+      146  Peace                        PRINCIPLE +B(PEACE)
+      147  Persian Gulf Policy                    +C(PERSIAN-GULF)
+      148  Philippines                  FOREIGN   +C
+      149  Plant Closing                PROPOSAL    (PLANT-CLOSING)
+      150  Pledge of Allegiance                   +B(PLEDGE)
+      151  Poland                       FOREIGN   +C
+      152  Poverty Programs                       +C(POVERTY)
+      153  Pragmatism                   PRINCIPLE   
+      154  President                              +C
+      155  President Bush                         +C(BUSH)
+      156  President Reagan                       +C(REAGAN)
+      157  Prevention of Smoking                  +C(SMOKING-BAN
+                                                     SMOKING-WARNINGS)
+      158  Prison and Corrections       REFORM    +B(PRISON)
+      159  Prisoner Furloughs           POLICY    -C(FURLOUGHS)
+      160  Privacy Protection           PRINCIPLE +C(PRIVACY)
+      161  Privatization                          -C
+      162  Progress                     PRINCIPLE   
+      163  Prosperity                   ECONOMIC  +B
+      164  Public TV and radio          PROGRAM   +C(PUBLIC-TV PUBLIC-RADIO)
+      165  Public Works                             (PUBLIC-WORKS)
+      166  Racism                       PROBLEM   -C
+      167  Regulation                   PRINCIPLE   (REGULATION)
+      168  Religious freedom            PRINCIPLE +A(RELIGION RELIGIOUS-FREEDOM)
+      169  Responsibility               PRINCIPLE +B
+      170  Retribution                  PRINCIPLE +C
+      171  Right to an Education        RIGHT     +C(EDUCATION-RIGHTS)
+      172  Rural Electrification        PROGRAM   +C(RURAL-ELECTRIC)
+      173  School Bussing               POLICY    -C(BUSSING)
+      174  School Desegregation         POLICY    +C(DESEGREGATION)
+      175  School Prayer                PROPOSAL  +C(PRAYER)
+      176  Self Determination           RIGHT     +B(SELF-DETERMINATION)
+      177  Separation of church and state PRINCIPLE +C(CHURCH-AND-STATE)
+      178  Social Policy                            (SOCIAL)
+      179  Social Security                        +B(SOCIAL-SECURITY)
+      180  South Africa                           -C(SOUTH-AFRICA)
+      181  South America                FOREIGN   +C(SOUTH-AMERICA)
+      182  Soviet Union                 FOREIGN   +C(USSR RUSSIA)
+      183  Space Exploration            PROGRAM   +C(SPACE)
+      184  States Rights                PRINCIPLE +C(STATES-RIGHTS)
+      185  Stealth Bomber                           (STEALTH)
+      186  Stimulate investment         ECONOMIC  +C(SPUR-INVESTMENT)
+      187  Strategic Defense Initiative PROGRAM   +C(SDI)
+      188  Student loans                PROGRAM   +C(STUDENT-LOANS)
+      189  Superfund                              +C(SUPERFUND)
+      190  Taiwan                       FOREIGN   +C(CHINA TAIWAN)
+      191  Tax Reform                             +C(TAX-REFORM)
+      192  Taxes                        POLICY    -B
+      193  Textile Industry             GROUP       (TEXTILE-INDUSTRY TEXTILES)
+      194  Third World Debt                       +C(THIRD-WORLD-DEBT)
+      195  Tobacco Price Supports                   (TOBACCO-PRICE-SUPPORTS)
+      196  Totalitarianism              PRINCIPLE -B
+      197  Tower Nomination             NOMINATION   (TOWER)
+      198  Toxic waste cleanup                    +C(TOXIC-WASTE)
+      199  Trade                                  +C
+      200  Trade Deficit Reduction                +C(TRADE-DEFICIT)
+      201  Trade Restrictions           POLICY      (TRADE-RESTRICTIONS)
+      202  Tradition                    PRINCIPLE +C
+      203  Transportation                           
+      204  Trident 2 Submarine                      (TRIDENT2
+                                                     TRIDENT-II-MISSILE)
+      205  Unemployment                           +C(UNEMPLOYMENT)
+      206  Unemployment insurance       PROGRAM   +C(UNEMPLOYMENT-INSURANCE)
+      207  United Nations               FOREIGN   +C(UN UNITED-NATIONS)
+      208  Urban Renewal                          +C(SLUM CLEARANCE URBAN
+                                                     RENEWAL URBAN-RENEWAL)
+      209  Veterans Affairs             GROUP     +C(VETERANS VETERANS-BENEFITS)
+      210  Vietnam Trade Relations                  (VIETNAM-TRADE-RELATIONS)
+      211  Voting Rights                PRINCIPLE +C(VOTING-RIGHTS)
+      212  Warsaw Pact Nations          FOREIGN     (WARSAW-PACT IRON-CURTAIN)
+      213  Water Pollution Control      PROGRAM   +C(CLEAN-WATER
+                                                     WATER-POLLUTION-CONTROL)
+      214  Weapons                                +C(WEAPON WEAPONS)
+      215  Whistle Blowers              GROUP     +C(WHISTLE-BLOWERS)
+  *   216  Women's Rights                         +C(WOMENS-RIGHTS)
+....ISSUE> display
+
+Name:          Women's Rights
+Synonyms:      (WOMENS-RIGHTS)
+Isa:           (CIVIL-RIGHTS)
+Polarity:      Support federal efforts to end sex discrimination
+English:       women's civil rights
+English-Short:  women's rights
+Pro-English:   the legitimate rights and concerns of women
+Con-English:   radical feminist positions
+Groups:        (NOW WOMEN)
+Pro-Stances:   (#{Stance (5) [B:PRO] PRIVACY (ISSUE:WOMENS-RIGHTS)}
+                #{Stance (6) [B:PRO] ABORTION (ISSUE:WOMENS-RIGHTS)}
+                #{Stance (7) [B:PRO] EQUALITY (ISSUE:WOMENS-RIGHTS)}
+                #{Stance (8) [B:PRO] FAIRNESS (ISSUE:WOMENS-RIGHTS)}
+                #{Stance (9) [B:PRO] PROGRESS (ISSUE:WOMENS-RIGHTS)})
+Con-Stances:   (#{Stance (10) [C:PRO] FAMILY (ISSUE:WOMENS-RIGHTS)}
+                #{Stance (11) [B:PRO] TRADITION (ISSUE:WOMENS-RIGHTS)})
+Norm:          (PRO C ISSUE:ISSUE.818 WOMENS-RIGHTS)
+Status:        Active
+Date-Open:     Sunday, January 22, 1989
+Symbol:        ISSUE.818
+大多数の人が はs に賛成 Women's Rights.  
+のサポート women's civil rights upholds the belief in fairness in society
+ a woman's right to have an abortion, the principle of equality
+ the belief in a right to privacy, and the principle of progress
+and change in society.  
+反対 women's rights is important for tradition and preserving the
+status quo.  反対 women's rights is consistent with traditional
+family values.  
+quit
+END-OF-DBASE
+CL-USER> (jpn-test 'pro 'b '(aids women abortion))
+("大衆 快く 支持するs AIDS." "典型的なアメリカ人 はs に賛成 Women's Rights." "普通の人 支持するs Abortion.")
+CL-USER> 
